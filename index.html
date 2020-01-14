@@ -38,8 +38,9 @@
   <body>
     <div class="ie-panel">
       <a href="http://windows.microsoft.com/en-US/internet-explorer/"
-        ><img
-          src="images/warning_bar_0000_us.jpg"
+      > <img
+          src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+          data-src="images/warning_bar_0000_us.jpg"
           height="42"
           width="820"
           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."
@@ -101,7 +102,8 @@
                     <a class="brand" href="index.html">
                       <img
                         class="brand-logo-light"
-                        src="images/ruby-conf-india-logo.webp"
+                        src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                        data-src="images/ruby-conf-india-logo.webp"
                         alt=""
                         style="max-height: 60px;"
                       />
@@ -508,7 +510,8 @@
                 <div class="images-box-item images-box-item-right">
                   <div class="wow fadeScale">
                     <img
-                      src="images/home-1-01-470x590.jp2"
+                      src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                      data-src="images/home-1-01-470x590.jp2"
                       alt=""
                       width="470"
                       height="590"
@@ -802,5 +805,14 @@
 
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+     function init() {
+       var imgDefer = document.getElementsByTagName('img');
+       for (var i=0; i<imgDefer.length; i++) {
+         if(imgDefer[i].getAttribute('data-src')) {
+           imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+         } } }
+     window.onload = init;
+    </script>
   </body>
 </html>
