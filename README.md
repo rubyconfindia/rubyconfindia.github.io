@@ -1,6 +1,6 @@
 # CSVConf.com
 
-A static site, [http://csvconf.com/](http://csvconf.com).
+A static site, [https://www.rubyconf.in/](https://www.rubyconf.in/).
 
 Forked from [martini](https://github.com/codegangsta/martini) gh-pages branch.
 
@@ -17,7 +17,7 @@ To work on the CSVConf site locally, you'll first need to have the following ins
 
 Once that's taken care of, here are the steps necessary to get it running locally:
 
-1. clone this repository and `cd` into the `csvconf.com` directory
+1. clone this repository and `cd` into the `rubyconfindia.github.io` directory
 1. run the `bundle` command
 1. run `bundle exec jekyll serve -w`
 
