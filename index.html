@@ -36,6 +36,44 @@
   margin: auto;
   width: 40%;
 }
+.speaker-card {
+    background-color: white; /* Card background color */
+    color: #537ABD; /* Text color */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;    /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    width: 100%; /* Full width to fill column */
+    height: 200px; /* Fixed height */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid white; /* White border */
+    text-decoration: none; /* Remove underline for links */
+    transition: transform 0.2s ease-in-out;
+}
+
+.speaker-card:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.speaker-info {
+    text-align: center; /* Center text within the card */
+}
+
+.speaker-name {
+    font-size: 20px; /* Slightly larger font size */
+    font-weight: bold; /* Make the name bold */
+    color: #537ABD; /* Use blue for speaker name */
+    margin-bottom: 5px;
+}
+
+.speaker-bio {
+    font-size: 14px; /* Adjusted font size */
+    color: #8b8b9a; /* Keep bio text white */
+}
+
     </style>
   </head>
   <body>
@@ -119,13 +157,12 @@
                         <a class="rd-nav-link" href="#">Home</a>
                       </li>
 
-                        <li class="rd-nav-item">
+                      <li class="rd-nav-item">
                         <a
-                          class="rd-nav-link"
-                          href="https://www.papercall.io/rubyconf-india-2024"
-                          target="_blank"
+                            class="rd-nav-link"
+                            href="#speakers"
                         >
-                          Submit CFP
+                          Speakers
                         </a> 
 
                       <li class="rd-nav-item">
@@ -390,6 +427,113 @@
         </div>
         </div>
         </section>
+        <section class="section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled">
+          <div class="container">
+            <h6><a id="speakers">Our Speakers</a></h6>
+            <br/>
+            <div class="container">
+              <div class="row">
+                  <div class="col-lg-4 col-md-6 mb-4"> <!-- Column for larger and medium screens -->
+                      <a href="https://www.linkedin.com/in/anush-kumar-s/" class="speaker-card" target="_blank">
+                          <div class="speaker-info">
+                              <div class="speaker-name">Anush Kumar (AK)</div>
+                              <div class="speaker-bio">Software Engineer at Rently</div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <a href="https://www.linkedin.com/in/chaitalikhangar/" class="speaker-card" target="_blank">
+                          <div class="speaker-info">
+                              <div class="speaker-name">Chaitali Khangar</div>
+                              <div class="speaker-bio">Technical Architect at Sedin Technologies - RailsFactory</div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <a href="https://x.com/crplanas" class="speaker-card" target="_blank">
+                          <div class="speaker-info">
+                              <div class="speaker-name">Cristian Planas</div>
+                              <div class="speaker-bio">Group Tech Lead & Senior Staff Software Engineer at Zendesk</div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <a href="https://x.com/rishudc119" class="speaker-card" target="_blank">
+                          <div class="speaker-info">
+                              <div class="speaker-name">Deepak Chauhan</div>
+                              <div class="speaker-bio">Senior Software Engineer at Betacraft</div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <a href="https://keshavbiswa.com" class="speaker-card" target="_blank">
+                          <div class="speaker-info">
+                              <div class="speaker-name">Keshav Biswa</div>
+                              <div class="speaker-bio">Senior Software Engineer at Saeloun</div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <a href="https://manu-j.com/" class="speaker-card" target="_blank">
+                          <div class="speaker-info">
+                              <div class="speaker-name">Manu Janardhanan</div>
+                              <div class="speaker-bio">Engineering Lead at Lodgistics</div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <a href="https://www.linkedin.com/in/puneet-khushwani-01012726/" class="speaker-card" target="_blank">
+                          <div class="speaker-info">
+                              <div class="speaker-name">Puneet Khushwani</div>
+                              <div class="speaker-bio">Sr. Engineering Manager at Coupa Software</div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <a href="https://x.com/rtdp" class="speaker-card" target="_blank">
+                          <div class="speaker-info">
+                              <div class="speaker-name">Ratnadeep Deshmane</div>
+                              <div class="speaker-bio">Founder at BetaCraft Technologies</div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <a href="https://www.linkedin.com/in/rohit-mukherjee-863b322b/" class="speaker-card" target="_blank">
+                          <div class="speaker-info">
+                              <div class="speaker-name">Rohit Mukherjee</div>
+                              <div class="speaker-bio">Technical Lead at Rently</div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <a href="https://github.com/ruby-ist/weaviate_record" class="speaker-card" target="_blank">
+                          <div class="speaker-info">
+                              <div class="speaker-name">Sriram V</div>
+                              <div class="speaker-bio">Associate RoR Developer at Rently</div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <a href="https://www.linkedin.com/in/sumit-dey-035/" class="speaker-card" target="_blank">
+                          <div class="speaker-info">
+                              <div class="speaker-name">Sumit Dey</div>
+                              <div class="speaker-bio">Lead Software Engineer at Coupa Software</div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <a href="https://www.linkedin.com/in/vishwajeetsinghd/" class="speaker-card" target="_blank">
+                          <div class="speaker-info">
+                              <div class="speaker-name">Vishwajeetsingh Desurkar</div>
+                              <div class="speaker-bio">Principal Engineer at SimplySmart Technologies</div>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+          </div>
+            </div>
+        </section>
+
               <!--
               <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
 
@@ -2466,5 +2610,8 @@
 
     <script defer src="js/core.min.js"></script>
     <script defer src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
