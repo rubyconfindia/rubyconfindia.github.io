@@ -37,41 +37,73 @@
   width: 40%;
 }
 .speaker-card {
-    background-color: white; /* Card background color */
-    color: #537ABD; /* Text color */
-    border-radius: 10px;
+  background-color: white;
+  color: #537ABD;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  text-decoration: none;
+  align-items: flex-start;
+  gap: 20px;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.speaker-left {
+    flex: 0 0 40%; /* Fixed 40% width */
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center;    /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
-    width: 100%; /* Full width to fill column */
-    height: 300px; /* Fixed height */
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid white; /* White border */
-    text-decoration: none; /* Remove underline for links */
-    transition: transform 0.2s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
 }
 
-.speaker-card:hover {
-    transform: translateY(-5px); /* Subtle lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+.speaker-photo img {
+    width: 100%; /* Full width of left container */
+    max-width: 150px; /* Optional max width */
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px; /* Square shape with slightly rounded corners */
+    margin-bottom: 10px;
 }
 
-.speaker-info {
-    text-align: center; /* Center text within the card */
-}
-
+/* Name and Bio styling */
 .speaker-name {
-    font-size: 20px; /* Slightly larger font size */
-    font-weight: bold; /* Make the name bold */
-    color: #537ABD; /* Use blue for speaker name */
+    font-size: 18px;
+    font-weight: bold;
+    color: #537ABD;
     margin-bottom: 5px;
 }
 
 .speaker-bio {
-    font-size: 14px; /* Adjusted font size */
-    color: #8b8b9a; /* Keep bio text white */
+    font-size: 12px;
+    color: #8b8b9a;
+    line-height: normal;
+}
+
+/* Right section styling (60% width) */
+.speaker-right {
+    flex: 1 1 60%; /* Take up 60% width */
+    text-align: center;
+}
+
+.speaker-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #405B8A;
+    margin-bottom: 5px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.speaker-abstract {
+    font-size: 13px;
+    color: #6c757d;
+    line-height: 1.5;
+    text-align: left;
 }
 
     </style>
@@ -434,121 +466,197 @@
             <div class="container">
               <div class="row">
                   <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://www.linkedin.com/in/anush-kumar-s/" class="speaker-card d-flex align-items-center" target="_blank">
-                          <div class="speaker-photo me-3">
-                              <img src="images/speakers/AnushKumar.JPG" alt="Anush Kumar" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                      <a href="https://www.linkedin.com/in/anush-kumar-s/" class="speaker-card d-flex" target="_blank">
+                          <div class="speaker-right">
+                              <div class="speaker-title">Solid Queue - Default Active Job Adaptor in Rails 8</div>
+                              <div class="speaker-abstract">
+                                  Struggling with Sidekiq config or performance issues with delayed_jobs? Join our talk on "Solid Queue," a new Active Job adapter that boosts background job performance and simplifies setup. It will soon be the default in Rails 8!
+                              </div>
                           </div>
-                          <div class="speaker-info">
+                          <div class="speaker-left">
+                              <div class="speaker-photo">
+                                  <img src="images/speakers/AnushKumar.JPG" alt="Anush Kumar" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                              </div>
                               <div class="speaker-name">Anush Kumar (AK)</div>
                               <div class="speaker-bio">Software Engineer at Rently</div>
                           </div>
                       </a>
                   </div>
+          
                   <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://www.linkedin.com/in/chaitalikhangar/" class="speaker-card d-flex align-items-center" target="_blank">
-                          <div class="speaker-photo me-3">
-                              <img src="images/speakers/chaitaliK.jpg" alt="Chaitali Khangar" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                      <a href="https://www.linkedin.com/in/chaitalikhangar/" class="speaker-card d-flex" target="_blank">
+                          <div class="speaker-right">
+                              <div class="speaker-title">Metaprogramming: Unraveling the Magic</div>
+                              <div class="speaker-abstract">
+                                  Discover Ruby metaprogramming! Learn powerful techniques to make your code dynamic and adaptable while avoiding added complexity. Join us to master the art of clean, flexible Ruby!
+                              </div>
                           </div>
-                          <div class="speaker-info">
+                          <div class="speaker-left">
+                              <div class="speaker-photo">
+                                  <img src="images/speakers/chaitaliK.jpg" alt="Chaitali Khangar" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                              </div>
                               <div class="speaker-name">Chaitali Khangar</div>
                               <div class="speaker-bio">Technical Architect at Sedin Technologies - RailsFactory</div>
                           </div>
                       </a>
                   </div>
+          
                   <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://x.com/rishudc119" class="speaker-card d-flex align-items-center" target="_blank">
-                          <div class="speaker-photo me-3">
-                              <img src="images/speakers/DeepakChauhan.jpeg" alt="Deepak Chauhan" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                      <a href="https://keshavbiswa.com" class="speaker-card d-flex" target="_blank">
+                          <div class="speaker-right">
+                              <div class="speaker-title">From Curiosity to Confusion: My Journey of Creating Confuscript in Ruby</div>
+                              <div class="speaker-abstract">
+                                  Discover this unique language designed to challenge conventional coding logic, exploring its syntax, quirks, and the playful philosophy behind it. Perfect for those curious about unconventional programming perspectives—join us to unravel the confusion!
+                              </div>
                           </div>
-                          <div class="speaker-info">
-                              <div class="speaker-name">Deepak Chauhan</div>
-                              <div class="speaker-bio">Senior Software Engineer at Famaash</div>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://keshavbiswa.com" class="speaker-card d-flex align-items-center" target="_blank">
-                          <div class="speaker-photo me-3">
-                              <img src="images/speakers/KeshavBiswa.jpg" alt="Keshav Biswa" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
-                          </div>
-                          <div class="speaker-info">
+                          <div class="speaker-left">
+                              <div class="speaker-photo">
+                                  <img src="images/speakers/KeshavBiswa.jpg" alt="Keshav Biswa" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                              </div>
                               <div class="speaker-name">Keshav Biswa</div>
                               <div class="speaker-bio">Senior Software Engineer at Saeloun</div>
                           </div>
                       </a>
                   </div>
+          
                   <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://manu-j.com/" class="speaker-card d-flex align-items-center" target="_blank">
-                          <div class="speaker-photo me-3">
-                              <img src="images/speakers/ManuJ.jpg" alt="Manu Janardhanan" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                      <a href="https://manu-j.com/" class="speaker-card d-flex" target="_blank">
+                          <div class="speaker-right">
+                              <div class="speaker-title">Puma, Falcon, Pitchfork: Navigating the Ruby Web Server Landscape</div>
+                              <div class="speaker-abstract">
+                                  Puma's Ruby server dominance is being challenged by Falcon's fiber-based concurrency and Pitchfork's memory efficiency. This talk aims to explore these choices and guide you to select the most suitable server for your unique application needs.
+                              </div>
                           </div>
-                          <div class="speaker-info">
+                          <div class="speaker-left">
+                              <div class="speaker-photo">
+                                  <img src="images/speakers/ManuJ.jpg" alt="Manu Janardhanan" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                              </div>
                               <div class="speaker-name">Manu Janardhanan</div>
                               <div class="speaker-bio">Engineering Lead at Lodgistics</div>
                           </div>
                       </a>
                   </div>
+          
                   <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://www.linkedin.com/in/puneet-khushwani-01012726/" class="speaker-card d-flex align-items-center" target="_blank">
-                          <div class="speaker-photo me-3">
-                              <img src="images/speakers/PuneetKhushwani.png" alt="Puneet Khushwani" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                      <a href="https://www.linkedin.com/in/puneet-khushwani-01012726/" class="speaker-card d-flex" target="_blank">
+                          <div class="speaker-right">
+                              <div class="speaker-title">Understanding Garbage Collection in Ruby</div>
+                              <div class="speaker-abstract">
+                                  Unlike languages like C, Ruby's automatic garbage collection frees us from manual memory
+                              </div>
                           </div>
-                          <div class="speaker-info">
+                          <div class="speaker-left">
+                              <div class="speaker-photo">
+                                  <img src="images/speakers/PuneetKhushwani.png" alt="Puneet Khushwani" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                              </div>
                               <div class="speaker-name">Puneet Khushwani</div>
                               <div class="speaker-bio">Sr. Engineering Manager at Coupa Software</div>
                           </div>
                       </a>
                   </div>
+          
                   <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://x.com/rtdp" class="speaker-card d-flex align-items-center" target="_blank">
-                          <div class="speaker-photo me-3">
-                              <img src="images/speakers/RatnadeepDeshmane.JPG" alt="Ratnadeep Deshmane" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                      <a href="https://x.com/rtdp" class="speaker-card d-flex" target="_blank">
+                          <div class="speaker-right">
+                              <div class="speaker-title">Reading Ruby - a visual walkthrough of the source code</div>
+                              <div class="speaker-abstract">
+                                  Curious about Ruby's internals but want to avoid diving deep into C? Interested in contributing to Ruby and need a primer before tackling the code? This talk covers both, simplifying the complexity with visuals, diagrams, and a touch of C.
+                              </div>
                           </div>
-                          <div class="speaker-info">
+                          <div class="speaker-left">
+                              <div class="speaker-photo">
+                                  <img src="images/speakers/RatnadeepDeshmane.JPG" alt="Ratnadeep Deshmane" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                              </div>
                               <div class="speaker-name">Ratnadeep Deshmane</div>
                               <div class="speaker-bio">Founder at BetaCraft Technologies</div>
                           </div>
                       </a>
                   </div>
+          
                   <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://www.linkedin.com/in/rohit-mukherjee-863b322b/" class="speaker-card d-flex align-items-center" target="_blank">
-                          <div class="speaker-photo me-3">
-                              <img src="images/speakers/RohitMukherjee.jpg" alt="Rohit Mukherjee" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                      <a href="https://www.linkedin.com/in/rohit-mukherjee-863b322b/" class="speaker-card d-flex" target="_blank">
+                          <div class="speaker-right">
+                              <div class="speaker-title">Ruby Mediator</div>
+                              <div class="speaker-abstract">
+                                  The mediator design pattern in Ruby is a behavioral pattern that reduces coupling between program components. It does this by allowing components to communicate indirectly through a mediator object instead of directly.
+                              </div>
                           </div>
-                          <div class="speaker-info">
+                          <div class="speaker-left">
+                              <div class="speaker-photo">
+                                  <img src="images/speakers/RohitMukherjee.jpg" alt="Rohit Mukherjee" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                              </div>
                               <div class="speaker-name">Rohit Mukherjee</div>
                               <div class="speaker-bio">Technical Lead at Rently</div>
                           </div>
                       </a>
                   </div>
+          
                   <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://srira.me/" class="speaker-card d-flex align-items-center" target="_blank">
-                          <div class="speaker-photo me-3">
-                              <img src="images/speakers/Sriram V.jpg" alt="Sriram V" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                      <a href="https://www.linkedin.com/in/sonal-sachdev13/" class="speaker-card d-flex" target="_blank">
+                          <div class="speaker-right">
+                              <div class="speaker-title">If You Can Whisk, You Can Code</div>
+                              <div class="speaker-abstract">
+                                  This talk will debunk common coding myths and showcase the essential tools for success, proving that, like Remy the rat, creativity and confidence are all you need. Get ready to whisk your way into coding!
+                              </div>
                           </div>
-                          <div class="speaker-info">
-                              <div class="speaker-name">Sriram V</div>
-                              <div class="speaker-bio">Associate RoR Developer at Rently</div>
+                          <div class="speaker-left">
+                              <div class="speaker-photo">
+                                  <img src="images/speakers/SonalSachdev.jpeg" alt="Sonal Sachdev" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                              </div>
+                              <div class="speaker-name">Sonal Sachdev</div>
+                              <div class="speaker-bio">Software Engineer at Josh Software</div>
                           </div>
                       </a>
                   </div>
+
                   <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://www.linkedin.com/in/sumit-dey-035/" class="speaker-card d-flex align-items-center" target="_blank">
-                          <div class="speaker-photo me-3">
-                              <img src="images/speakers/sumitDey.jpg" alt="Sumit Dey" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                    <a href="https://srira.me/" class="speaker-card d-flex" target="_blank">
+                        <div class="speaker-right">
+                            <div class="speaker-title">Taming Flaky Specs: Diagnosing Test Failures in Ruby</div>
+                            <div class="speaker-abstract">
+                                Flaky specs can cause random test failures, disrupting CI pipelines and eroding confidence in your test suite. In this talk, we'll explore common root causes of flaky specs and dive into strategies for diagnosing rare, hard-to-reproduce issues to help stabilize your test suite.
+                            </div>
+                        </div>
+                        <div class="speaker-left">
+                            <div class="speaker-photo">
+                                <img src="images/speakers/Sriram V.jpg" alt="Sriram V" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                            </div>
+                            <div class="speaker-name">Sriram V</div>
+                            <div class="speaker-bio">Associate RoR Developer at Rently</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4">
+                  <a href="https://www.linkedin.com/in/sumit-dey-035/" class="speaker-card d-flex" target="_blank">
+                      <div class="speaker-right">
+                          <div class="speaker-title">Rails Upgrade Mastery: Best Practices for Large-Scale Enterprise Applications</div>
+                          <div class="speaker-abstract">
+                              Upgrading Rails in an enterprise software? Learn from Coupa's journey! This talk will share our challenges, strategies, and best practices based on our experience of upgrading from Rails 6 to 7.Take away valuable insights and practical tips for a seamless Rails upgrade at scale.
                           </div>
-                          <div class="speaker-info">
-                              <div class="speaker-name">Sumit Dey</div>
-                              <div class="speaker-bio">Lead Software Engineer at Coupa Software</div>
+                      </div>
+                      <div class="speaker-left">
+                          <div class="speaker-photo">
+                              <img src="images/speakers/sumitDey.jpg" alt="Sumit Dey" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
                           </div>
-                      </a>
-                  </div>
+                          <div class="speaker-name">Sumit Dey</div>
+                          <div class="speaker-bio">Lead Software Engineer at Coupa</div>
+                      </div>
+                  </a>
+              </div>
+          
                   <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://www.linkedin.com/in/vishwajeetsinghd/" class="speaker-card d-flex align-items-center" target="_blank">
-                          <div class="speaker-photo me-3">
-                              <img src="images/speakers/Vishwa.png" alt="Vishwajeetsingh Desurkar" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                      <a href="https://www.linkedin.com/in/vishwajeetsinghd/" class="speaker-card d-flex" target="_blank">
+                          <div class="speaker-right">
+                              <div class="speaker-title">The Harvey Dent Dilemma: Ruby's White Knight Rises (or Falls)</div>
+                              <div class="speaker-abstract">
+                                  Frozen strings, memoization, and Ruby's other quirky features can be your performance secret weapon, but misuse can lead to a performance nightmare. Let's dive into the rabbit hole of Ruby optimization and learn how to avoid the traps while writing code that's both fast and fun.
+                              </div>
                           </div>
-                          <div class="speaker-info">
+                          <div class="speaker-left">
+                              <div class="speaker-photo">
+                                  <img src="images/speakers/Vishwa.png" alt="Vishwajeetsingh Desurkar" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                              </div>
                               <div class="speaker-name">Vishwajeetsingh Desurkar</div>
                               <div class="speaker-bio">Principal Engineer at SimplySmart Technologies</div>
                           </div>
@@ -556,8 +664,6 @@
                   </div>
               </div>
           </div>
-          
-          
           
             </div>
         </section>
@@ -2281,7 +2387,7 @@
                       class="sponsor"
                       href="https://www.joshsoftware.com/"
                       data-triangle=".sponsor-overlay"
-                      style="height: 110px;"
+                      style="height: 110px; object-fit: contain"
                       target="_blank"
                       >
                         <img
@@ -2308,7 +2414,7 @@
                       <div class="sponsor-img">
                         <img
                           src="images/company-logos/pattern-black.png"
-                          style="height: 100%"
+                          style="height: 100%; object-fit: contain"
                         />
                       </div>
                     </a>
@@ -2378,7 +2484,7 @@
                       href="https://www.saeloun.com/"
                       data-triangle=".sponsor-overlay"
                       target="_blank"
-                      style="height: 75px; width: 220px"
+                      style="height: 75px; width: 220px; object-fit: contain"
                       >
                       <div class="sponsor-img">
                         <img
@@ -2398,7 +2504,7 @@
                       href="https://railsfactory.com/"
                       data-triangle=".sponsor-overlay"
                       target="_blank"
-                      style="height: 75px; width: 220px"
+                      style="height: 75px; width: 220px; object-fit: contain"
                       >
                       <div class="sponsor-img">
                         <img
