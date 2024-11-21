@@ -117,6 +117,29 @@
         overflow: hidden;
     }
 
+    .schedule-classic {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    gap: 15px; /* Add spacing between elements */
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.schedule-classic-time {
+    font-weight: bold;
+    color: #d92d2f;
+}
+
+.schedule-classic-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #405B8A;
+}
+
+.schedule-speaker {
+    color: #6c757d;
+}
+
     </style>
   </head>
   <body>
@@ -464,20 +487,292 @@
       </section>
 
       <section class="section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled">
-            <div class="container">
-              <h6><a id="schedule">RubyConf India 2024</a></h6>
-              <br>
-            <div class="card border-0">
-              <div class="middle">
-                <h1>COMING SOON</h1>
-                <hr>
-                <p>Stay Tuned for the Updates</p>
+        <div class="container">
+          <h6><a id="schedule">RubyConf India 2024</a></h6>
+          <br>
+          <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
+            <ul class="nav nav-tabs">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link nav-link-secondary-darker active show" href="#tabs-1-1" data-toggle="tab" data-triangle=".nav-link-overlay">
+                  <span class="nav-link-overlay" style="border-top-width: 95px; border-left-width: 281.983px;"></span>
+                  <span class="nav-link-title">Nov 28, 2024</span>
+                </a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link nav-link-secondary-darker" href="#tabs-2-1" data-toggle="tab" data-triangle=".nav-link-overlay">
+                  <span class="nav-link-overlay" style="border-top-width: 95px; border-left-width: 281.983px;"></span>
+                  <span class="nav-link-title">Nov 29, 2024</span>
+                </a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link nav-link-secondary-darker" href="#tabs-3-1" data-toggle="tab" data-triangle=".nav-link-overlay">
+                  <span class="nav-link-overlay" style="border-top-width: 95px; border-left-width: 281.983px;"></span>
+                  <span class="nav-link-title">Nov 30, 2024</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="tab-content">
+            <!-- Day 1 Schedule -->
+            <div class="tab-pane fade active show" id="tabs-1-1">
+              <div class="schedule-day" id="day-1">
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div class="card-title">
+                      <p class="schedule-classic-time">3:00 PM - 6:00 PM</p>
+                      <p class="schedule-classic-title">Pre-Registration</p>
+                    </div>
+                  </div>
+                </article>
               </div>
-              <br>
-              <br>
+            </div>
+      
+            <!-- Day 2 Schedule -->
+            <div class="tab-pane fade" id="tabs-2-1">
+              <div class="schedule-day" id="day-2">
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">8:00 AM - 9:45 AM</p>
+                      <p class="schedule-classic-title">Registration</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">9:45 AM - 10:00 AM</p>
+                      <p class="schedule-classic-title">Kickoff</p>
+                      <p class="schedule-speaker">Gautam Rege</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">10:00 AM - 10:30 AM</p>
+                      <p class="schedule-classic-title">Puma, Falcon, Pitchfork: Navigating the Ruby Web Server Landscape</p>
+                      <p class="schedule-speaker">Manu Janardhnan</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">10:30 AM - 11:00 AM</p>
+                      <p class="schedule-classic-title">Taming Flaky Specs: Diagnosing Test Failures in Ruby</p>
+                      <p class="schedule-speaker">Sriram V</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">11:00 AM - 11:30 AM</p>
+                      <p class="schedule-classic-title">Tea Break</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">11:30 AM - 12:00 PM</p>
+                      <p class="schedule-classic-title">Understanding Garbage Collection in Ruby</p>
+                      <p class="schedule-speaker">Puneet Khushwani</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">12:00 PM - 12:30 PM</p>
+                      <p class="schedule-classic-title">Ruby Mediator</p>
+                      <p class="schedule-speaker">Rohit Mukherjee</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">12:30 PM - 2:30 PM</p>
+                      <p class="schedule-classic-title">Lunch</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">2:30 PM - 2:45 PM</p>
+                      <p class="schedule-classic-title">Sponsor Showcase</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">2:45 PM - 3:15 PM</p>
+                      <p class="schedule-classic-title">Metaprogramming: Unraveling the Magic</p>
+                      <p class="schedule-speaker">Chaitali Khangar</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">3:15 PM - 3:45 PM</p>
+                      <p class="schedule-classic-title">Solid Queue - Default Active Job Adaptor in Rails 8</p>
+                      <p class="schedule-speaker">Anush Kumar</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">3:45 PM - 4:30 PM</p>
+                      <p class="schedule-classic-title">Tea Break</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">4:30 PM - 5:00 PM</p>
+                      <p class="schedule-classic-title">From Curiosity to Confusion: My Journey of Creating Confuscript in Ruby</p>
+                      <p class="schedule-speaker">Keshav Biswa</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">5:00 PM - 5:30 PM</p>
+                      <p class="schedule-classic-title">The Harvey Dent Dilemma: Ruby's White Knight Rises (or Falls)</p>
+                      <p class="schedule-speaker">Vishwajeetsingh Desurkar</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">5:30 PM - 6:30 PM</p>
+                      <p class="schedule-classic-title">Flash Talks</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">6:30 PM - 7:00 PM</p>
+                      <p class="schedule-classic-title">Networking</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">7:30 PM onwards</p>
+                      <p class="schedule-classic-title">Party</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+      
+            <!-- Day 3 Schedule -->
+            <div class="tab-pane fade" id="tabs-3-1">
+              <div class="schedule-day" id="day-3">
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">10:00 AM - 10:30 AM</p>
+                      <p class="schedule-classic-title">Reading Ruby - a visual walkthrough of the source code</p>
+                      <p class="schedule-speaker">Ratnadeep Deshmane</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">10:30 AM - 11:00 AM</p>
+                      <p class="schedule-classic-title">Rails Upgrade Mastery: Best Practices for Large-Scale Enterprise Applications</p>
+                      <p class="schedule-speaker">Sumit Dey</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">11:00 AM - 11:30 AM</p>
+                      <p class="schedule-classic-title">Tea Break</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">11:30 AM - 12:00 PM</p>
+                      <p class="schedule-classic-title">Power of Gemini and How Developers can Harness it</p>
+                      <p class="schedule-speaker">Ashish Tendulkar</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">12:00 PM - 12:30 PM</p>
+                      <p class="schedule-classic-title">If You Can Whisk, You Can Code</p>
+                      <p class="schedule-speaker">Sonal Sachdev</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">12:30 PM - 2:00 PM</p>
+                      <p class="schedule-classic-title">Lunch</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">2:00 PM - 3:00 PM</p>
+                      <p class="schedule-classic-title">Panel Discussion</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">3:00 PM - 4:00 PM</p>
+                      <p class="schedule-classic-title">Flash Talks</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">4:00 PM - 4:15 PM</p>
+                      <p class="schedule-classic-title">Vote of Thanks</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="card card-corporate">
+                  <div class="card-header">
+                    <div>
+                      <p class="schedule-classic-time">4:15 PM onwards</p>
+                      <p class="schedule-classic-title">Tea Break</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-        </section>
+      </section>
+      
+      
         <section class="section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled">
           <div class="container">
             <h6><a id="speakers">Our Speakers</a></h6>
@@ -704,1575 +999,6 @@
             </div>
         </section>
 
-              <!--
-              <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
-
-                <ul class="nav nav-tabs">
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link nav-link nav-link-secondary-darker active show"
-                      href="#tabs-1-1"
-                      data-toggle="tab"
-                      data-triangle=".nav-link-overlay"
-                      ><span
-                        class="nav-link-overlay"
-                        style="border-top-width: 95px; border-left-width: 281.983px;"
-                      ></span
-                      ><span class="nav-link-cite">Conference Day</span
-                      ><span class="nav-link-title">August 26, 2023 </span></a
-                    >
-                  </li>
-
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link nav-link nav-link-secondary-darker"
-                      href="#tabs-2-1"
-                      data-toggle="tab"
-                      data-triangle=".nav-link-overlay"
-                      ><span
-                        class="nav-link-overlay"
-                        style="border-top-width: 95px; border-left-width: 281.983px;"
-                      ></span
-                      ><span class="nav-link-cite">Conference Day</span
-                      ><span class="nav-link-title"> August 27, 2023</span></a
-                    >
-                  </li>
-                </ul>
-
-                <div
-                  class="tab-content wow fadeIn"
-                  style="visibility: hidden; animation-name: none;"
-                >
-                  <div class="tab-pane fade active show" id="tabs-1-1">
-                    <div
-                      class="card-group-custom card-group-corporate"
-                      id="accordion1"
-                      role="tablist"
-                      aria-multiselectable="false"
-                    >
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-lgmatwsk"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-jsqkomag"
-                              aria-controls="accordion1-card-body-jsqkomag"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span><img
-                                        src="images/speakers/ruby.png"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >8:30 am to 9:45 am</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        >Registration</span
-                                      >
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                      </article>
-
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-lgmatwsk"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-jsqkomag"
-                              aria-controls="accordion1-card-body-jsqkomag"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span><img
-                                        src="images/speakers/ruby.png"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >9:45 am to 10:00 am</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        >Opening Ceremony</span
-                                      >
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                      </article>
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-pcftruhu"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-oakhqimk"
-                              aria-controls="accordion1-card-body-oakhqimk"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span class="schedule-classic-img"
-                                      ><img
-                                        src="images/speakers/karan.jpg"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >10:00 am to 10:25 am</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        ><u>Building a Rails app live with AI</u></span
-                                      >
-                                      <span class="schedule-classic-author"
-                                        >by
-                                        <span class="schedule-classic-author-name"
-                                          >Karan MV </span
-                                        >
-                                        - (@mvkaran) GitHub</span
-                                      >
-                                    </span>
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="collapse"
-                          id="accordion1-card-body-oakhqimk"
-                          aria-labelledby="accordion1-card-head-pcftruhu"
-                          data-parent="#accordion1"
-                          role="tabpanel"
-                        >
-                          <div class="card-body">
-                            <p>
-                              Everyone loves a live demo. If it’s especially with AI, no one can be sure of what the outcome would be! It would be a fun session to do some live coding with AI, along with (hopefully) some live AI-generated music to make it even more fun!                              <br>
-                            </p>
-                          </div>
-                        </div>
-                      </article>
-
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-pcftruhu"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-oakhqim"
-                              aria-controls="accordion1-card-body-oakhqim"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span class="schedule-classic-img"
-                                      ><img
-                                        src="images/speakers/magesh.png"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >10:30 am to 10:55 am</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        ><u>Concurrency in Ruby: Threads, Fibers, and Ractors Demystified </u></span
-                                      >
-                                      <span class="schedule-classic-author"
-                                        >by
-                                        <span class="schedule-classic-author-name"
-                                          >Magesh</span
-                                        >
-                                        - (@iMagesh)</span
-                                      >
-                                    </span>
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="collapse"
-                          id="accordion1-card-body-oakhqim"
-                          aria-labelledby="accordion1-card-head-pcftruhu"
-                          data-parent="#accordion1"
-                          role="tabpanel"
-                        >
-                          <div class="card-body">
-                            <p>
-                              Speed up your Ruby applications with the power of concurrency! Join us as we demystify threads, fibers, and Ractors, understanding their unique strengths, use cases, and impact on Ruby performance. Learn to tackle I/O bottlenecks and enable parallel execution, boosting your code’s speed.
-                             </p>
-                          </div>
-                        </div>
-                      </article>
-
-                      <div class="schedule-classic schedule-classic-simple">
-                        <div class="schedule-classic-content">
-                          <div class="schedule-classic-img">
-                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                              <use xlink:href="images/svg/sprite.svg#clock"></use>
-                            </svg>
-                          </div>
-                          <span class="schedule-classic-time"
-                            >11:00 am to 11:20 am</span
-                          ><span class="schedule-classic-title heading-4"
-                            >Enjoy the coffee break</span
-                          >
-                        </div>
-                      </div>
-
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-pcftruhu"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-oakhqim1"
-                              aria-controls="accordion1-card-body-oakhqim"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span class="schedule-classic-img"
-                                      ><img
-                                        src="images/speakers/rishi.jpg"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >11:20 am to 11:45 am</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        ><u>Rails Performance Monitoring 101: A Primer for Developers </u></span
-                                      >
-                                      <span class="schedule-classic-author"
-                                        >by
-                                        <span class="schedule-classic-author-name"
-                                          >Rish Jain </span
-                                        >
-                                        - (@jainrishi15) OmbuLabs</span
-                                      >
-                                    </span>
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="collapse"
-                          id="accordion1-card-body-oakhqim1"
-                          aria-labelledby="accordion1-card-head-pcftruhu"
-                          data-parent="#accordion1"
-                          role="tabpanel"
-                        >
-                          <div class="card-body">
-                            <p>
-                              Congratulations! You have just joined a startup that went viral. Your first task is to figure out why their Rails application is slow. Now what?
-
-                               This talk will give you the tools you need to quickly find what’s wrong and learn a top-down approach for triaging performance issues and scaling the app.
-                            </p>
-                          </div>
-                        </div>
-                      </article>
-
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-pcftruhu"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-oakhqim2"
-                              aria-controls="accordion1-card-body-oakhqim"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span class="schedule-classic-img"
-                                      ><img
-                                        src="images/speakers/maheshwari.jpeg"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >11:50 am to 12:15 pm</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        ><u>Common Mistakes that make test cases flaky and how to avoid them </u></span
-                                      >
-                                      <span class="schedule-classic-author"
-                                        >by
-                                        <span class="schedule-classic-author-name"
-                                          >Maheshwari Ramu</span
-                                        >
-                                        - Rently</span
-                                      >
-                                    </span>
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="collapse"
-                          id="accordion1-card-body-oakhqim2"
-                          aria-labelledby="accordion1-card-head-pcftruhu"
-                          data-parent="#accordion1"
-                          role="tabpanel"
-                        >
-                          <div class="card-body">
-                          <p>
-                            Tired of flaky test cases causing frustration and delays? Imagine reliable, consistent tests with accurate results every time. Learn about test automation pitfalls and get practical strategies for a smoother software development process. Stop the frustration, embrace efficiency!
-                            </p>
-                          </div>
-                        </div>
-                      </article>
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-pcftruhu"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-oakhqim3"
-                              aria-controls="accordion1-card-body-oakhqim"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span class="schedule-classic-img"
-                                      ><img
-                                        src="images/speakers/harman.jpg"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >12:20 pm to 12:45 pm</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        ><u>Payment workflow with Ruby and Clickhouse</u></span
-                                      >
-                                      <span class="schedule-classic-author"
-                                        >by
-                                        <span class="schedule-classic-author-name"
-                                          >Harman Sohanpal
-                                          </span>
-                                        - (@HarmanSohanpal)</span
-                                      >
-                                    </span>
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="collapse"
-                          id="accordion1-card-body-oakhqim3"
-                          aria-labelledby="accordion1-card-head-pcftruhu"
-                          data-parent="#accordion1"
-                          role="tabpanel"
-                        >
-                          <div class="card-body">
-                            <p>
-                              Simple tech solution on payments workflow with huge business impact. Equally divided work among idempotent Sidekiq workers, Clickhouse data ingestion from CSV files using s3 connectors and ruby ODBC to show aggregated reports to users via API simplified our payments workflow and reporting.
-                             </p>
-                          </div>
-                        </div>
-                      </article>
-
-                      <div class="schedule-classic schedule-classic-simple">
-                        <div class="schedule-classic-content">
-                          <div class="schedule-classic-img">
-                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                              <use xlink:href="images/svg/sprite.svg#clock"></use>
-                            </svg>
-                          </div>
-                          <span class="schedule-classic-time"
-                            >12:45 pm to 2:00 pm</span
-                          ><span class="schedule-classic-title heading-4"
-                            >Lunch</span
-                          >
-                        </div>
-                      </div>
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-xlwtrluc"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-hfymdjbl"
-                              aria-controls="accordion1-card-body-hfymdjbl"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span><img
-                                        src="images/speakers/ruby.png"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >2:00 pm to 2:30 pm</span
-                                      >
-                                      <span
-                                        class="schedule-classic-title heading-4"
-                                        >Energizer</span
-                                      >
-                                      </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                      </article>
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-pcftruhu"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-oakhqim31"
-                              aria-controls="accordion1-card-body-oakhqim"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span class="schedule-classic-img"
-                                      ><img
-                                        src="images/speakers/arihant.jpg"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >2:30 pm to 2:55 pm</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        ><u>Diving into the Dynamic: Demystifying Metaprogramming with Ruby </u></span
-                                      >
-                                      <span class="schedule-classic-author"
-                                        >by
-                                        <span class="schedule-classic-author-name"
-                                          >Arihant Hirawat
-                                          </span>
-                                        - (@arihant_2310)</span
-                                      >
-                                    </span>
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="collapse"
-                          id="accordion1-card-body-oakhqim31"
-                          aria-labelledby="accordion1-card-head-pcftruhu"
-                          data-parent="#accordion1"
-                          role="tabpanel"
-                        >
-                          <div class="card-body">
-                            <p>
-                              Dive deeper into the underlying dynamics of Ruby Metaprogramming to deepen the understanding of the language and its inner workings. We explore its real-world applications and unearth how Ruby gems harness this power to solve real-world coding challenges.
-                              </p>
-                          </div>
-                        </div>
-                      </article>
-
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-pcftruhu"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-oakhqim4"
-                              aria-controls="accordion1-card-body-oakhqim"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span class="schedule-classic-img"
-                                      ><img
-                                        src="images/speakers/shloka.jpeg"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >3:00 pm to 3:25 pm</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        ><u>Enhancing Code Quality with Rubocop  </u></span
-                                      >
-                                      <span class="schedule-classic-author"
-                                        >by
-                                        <span class="schedule-classic-author-name"
-                                          >Shloka Shah
-                                          </span>
-                                        - (@shlokashah0603)</span
-                                      >
-                                    </span>
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="collapse"
-                          id="accordion1-card-body-oakhqim4"
-                          aria-labelledby="accordion1-card-head-pcftruhu"
-                          data-parent="#accordion1"
-                          role="tabpanel"
-                        >
-                          <div class="card-body">
-                            <p>
-                              Supercharge code quality with Rubocop: the go-to Code-Style Linter for Ruby. Learn practical usage, configuration tips, and maintaining code quality. Tackle legacy code using Rubocop TODO Approach. Understand real-life application. Elevate your code quality by harmozing a standard among developers.
-                            </p>
-                          </div>
-                        </div>
-                      </article>
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion2-card-head-xlwtrluc"
-                              data-toggle="collapse"
-                              data-parent="#accordion2"
-                              href="#accordion2-card-body-hfymdjbl"
-                              aria-controls="accordion2-card-body-hfymdjbl"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span><img
-                                        src="images/speakers/ruby.png"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >3:30 pm to 4:10 pm</span
-                                      >
-                                      <span
-                                        class="schedule-classic-title heading-4"
-                                        >Flash Talks</span
-                                      >
-                                      </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                      </article>
-
-                      <div class="schedule-classic schedule-classic-simple">
-                        <div class="schedule-classic-content">
-                          <div class="schedule-classic-img">
-                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                              <use xlink:href="images/svg/sprite.svg#clock"></use>
-                            </svg>
-                          </div>
-                          <span class="schedule-classic-time"
-                            >4:10 pm to 4:30 pm</span
-                          ><span class="schedule-classic-title heading-4"
-                            >Enjoy the coffee break</span
-                          >
-                        </div>
-                      </div>
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-xlwtrluc"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-hfymdjbl"
-                              aria-controls="accordion1-card-body-hfymdjbl"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span><img
-                                        src="images/speakers/ruby.png"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >4:30 pm to 5:15 pm</span
-                                      >
-                                      <span
-                                        class="schedule-classic-title heading-4"
-                                        >Unconference sessions</span
-                                      >
-                                      </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                      </article>
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-pcftruhu"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-oakhqim5"
-                              aria-controls="accordion1-card-body-oakhqim"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span class="schedule-classic-img"
-                                      ><img
-                                        src="images/speakers/rahul.jpg"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >5:15 pm to 5:40 pm</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        ><u>Rails Orbiting the Cloud: Mastering Scalability with Kubernetes!" </u></span
-                                      >
-                                      <span class="schedule-classic-author"
-                                        >by
-                                        <span class="schedule-classic-author-name"
-                                          >Rahul Mahale
-                                          </span>
-                                        - (@Rahul_Mahale) Circle</span
-                                      >
-                                    </span>
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="collapse"
-                          id="accordion1-card-body-oakhqim5"
-                          aria-labelledby="accordion1-card-head-pcftruhu"
-                          data-parent="#accordion1"
-                          role="tabpanel"
-                        >
-                          <div class="card-body">
-                            <p>
-                          Kubernetes is a container orchestration system that can help you scale your Rails application with ease. In this talk, I will discuss the benefits of using Kubernetes for Rails applications, and I will show you how to solve the scaling challenges of Rails apps on Kubernetes.
-                            </p>
-                          </div>
-                        </div>
-                      </article>
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-pcftruhu"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-oakhqim7"
-                              aria-controls="accordion1-card-body-oakhqim"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span class="schedule-classic-img"
-                                      ><img
-                                        src="images/speakers/chinmay_naik.jpeg"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >5:45 pm to 6:10 pm</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        ><u>Avoiding over-engineering and big-ball-of-mud - 7 lessons for maintaining the balance  </u></span
-                                      >
-                                      <span class="schedule-classic-author"
-                                        >by
-                                        <span class="schedule-classic-author-name"
-                                          > Chinmay Naik
-                                          </span
-                                        >
-                                        - (@chinmay185) </span
-                                      >
-                                    </span>
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="collapse"
-                          id="accordion1-card-body-oakhqim7"
-                          aria-labelledby="accordion1-card-head-pcftruhu"
-                          data-parent="#accordion1"
-                          role="tabpanel"
-                        >
-                          <div class="card-body">
-                            <p>
-                              Teams in technology companies are often in a “tug of war” with themselves. They have to balance between “over-engineering” on one side and a “big ball of mud” on the other. They must maintain this balance to build software for today that can also scale for tomorrow. This talk covers how to do that.
-                              </p>
-                          </div>
-                        </div>
-                      </article>
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion2-card-head-xlwtrluc"
-                              data-toggle="collapse"
-                              data-parent="#accordion2"
-                              href="#accordion2-card-body-hfymdjbl"
-                              aria-controls="accordion2-card-body-hfymdjbl"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span><img
-                                        src="images/speakers/ruby.png"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >6:10 pm to 7:00 pm</span
-                                      >
-                                      <span
-                                        class="schedule-classic-title heading-4"
-                                        >Networking</span
-                                      >
-                                      </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                      </article>
-
-                      <div class="schedule-classic schedule-classic-simple">
-                        <div class="schedule-classic-content">
-                          <div class="schedule-classic-img">
-                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                              <use xlink:href="images/svg/sprite.svg#clock"></use>
-                            </svg>
-                          </div>
-                          <span class="schedule-classic-time"
-                            >7:00 pm onwards</span
-                          ><span class="schedule-classic-title heading-4"
-                            >Party</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="tab-pane fade" id="tabs-2-1">
-                    <div
-                      class="card-group-custom card-group-corporate"
-                      id="accordion1"
-                      role="tablist"
-                      aria-multiselectable="false"
-                    >
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-lgmatwsk"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-jsqkomag"
-                              aria-controls="accordion1-card-body-jsqkomag"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span><img
-                                        src="images/speakers/ruby.png"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >8:30 am to 9:45 am</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        >Registration</span
-                                      >
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                      </article>
-
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-lgmatwsk"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-jsqkomag"
-                              aria-controls="accordion1-card-body-jsqkomag"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span><img
-                                        src="images/speakers/ruby.png"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >9:45 am to 10:00 am</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        >Opening Ceremony</span
-                                      >
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                      </article>
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-pcftruhu"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-oakhqimk"
-                              aria-controls="accordion1-card-body-oakhqimk"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span class="schedule-classic-img"
-                                      ><img
-                                        src="images/speakers/vipul.jpeg"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >10:00 am to 10:25 am</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        ><u>From Sprockets to js-bundling: Evolution of JavaScript tooling in Rails! </u></span
-                                      >
-                                      <span class="schedule-classic-author"
-                                        >by
-                                        <span class="schedule-classic-author-name"
-                                          >Vipul A M </span
-                                        >
-                                        - (@vipulnsward) Saeloun Inc</span
-                                      >
-                                    </span>
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="collapse"
-                          id="accordion1-card-body-oakhqimk"
-                          aria-labelledby="accordion1-card-head-pcftruhu"
-                          data-parent="#accordion1"
-                          role="tabpanel"
-                        >
-                          <div class="card-body">
-                            <p>
-
-                              From sprockets to Webpacker and js-bundling, Rails tooling for JavaScript has evolved with times. Lets travel through the history of this evolution and how you should build modern Rails Apps in today’s rich JavaScript Ecosystem. An SPA, Monolith or API-only App, we’ll see different Rails solutions!                            </p>
-                          </div>
-                        </div>
-                      </article>
-
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-pcftruhu"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-oakhqim"
-                              aria-controls="accordion1-card-body-oakhqim"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span class="schedule-classic-img"
-                                      ><img
-                                      src="images/speakers/aniket.jpeg"
-                                      alt=""
-                                      width="122"
-                                      height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >10:30 am to 10:55 am</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        ><u>Monitoring Rails apps using Open Source  </u></span
-                                      >
-                                      <span class="schedule-classic-author"
-                                        >by
-                                        <span class="schedule-classic-author-name"
-                                          >Aniket Rao</span
-                                        >
-                                        - (@aniket_rao) Last9</span
-                                      >
-                                    </span>
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="collapse"
-                          id="accordion1-card-body-oakhqim"
-                          aria-labelledby="accordion1-card-head-pcftruhu"
-                          data-parent="#accordion1"
-                          role="tabpanel"
-                        >
-                          <div class="card-body">
-                            <p>
-                              Exhausted by APM inefficiencies? Harness open-source tools like Grafana, PromQL, OpenMetrics, Jaeger for optimal data handling. Achieve superior monitoring at a lower cost, cutting through data clutter, and rise above the ‘Shannon Limit’.                             </p>
-                          </div>
-                        </div>
-                      </article>
-
-                      <div class="schedule-classic schedule-classic-simple">
-                        <div class="schedule-classic-content">
-                          <div class="schedule-classic-img">
-                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                              <use xlink:href="images/svg/sprite.svg#clock"></use>
-                            </svg>
-                          </div>
-                          <span class="schedule-classic-time"
-                            >11:00 am to 11:20 am</span
-                          ><span class="schedule-classic-title heading-4"
-                            >Enjoy the coffee break</span
-                          >
-                        </div>
-                      </div>
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-pcftruhu"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-oakhqim1"
-                              aria-controls="accordion1-card-body-oakhqim"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span class="schedule-classic-img"
-                                      ><img
-                                        src="images/speakers/hieu.jpeg"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >11:20 am to 11:45 am</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        ><u>Building a Resilient MFA Framework: Strategies and Best Practices  </u></span
-                                      >
-                                      <span class="schedule-classic-author"
-                                        >by
-                                        <span class="schedule-classic-author-name"
-                                          >Hieu Nguyen
-                                          </span>
-                                        - (@sincepast) Ascenda</span
-                                      >
-                                    </span>
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="collapse"
-                          id="accordion1-card-body-oakhqim1"
-                          aria-labelledby="accordion1-card-head-pcftruhu"
-                          data-parent="#accordion1"
-                          role="tabpanel"
-                        >
-                          <div class="card-body">
-                            <p>
-                              With four years of hands-on experience at Ascenda, I have become deeply familiar with building authentication systems and extensively working with MFA and related features. The talk draws from all these experience, with both theory and real life examples to help building MFA easier and more secured.
-                            </p>
-                          </div>
-                        </div>
-                      </article>
-
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-pcftruhu"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-oakhqim2"
-                              aria-controls="accordion1-card-body-oakhqim"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span class="schedule-classic-img"
-                                      ><img
-                                        src="images/speakers/manu.jpg"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >11:50 am to 12:15 pm</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        ><u>Look Ma, No Sidekiq: A Peek into the Async Future.  </u></span
-                                      >
-                                      <span class="schedule-classic-author"
-                                        >by
-                                        <span class="schedule-classic-author-name"
-                                          >Manu Janardhanan
-                                          </span
-                                        >
-                                        <span> - (@techsutra)</span>
-                                      
-                                    </span>
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="collapse"
-                          id="accordion1-card-body-oakhqim2"
-                          aria-labelledby="accordion1-card-head-pcftruhu"
-                          data-parent="#accordion1"
-                          role="tabpanel"
-                        >
-                          <div class="card-body">
-                          <p>
-                            We usually turn to Sidekiq for tackling long-running tasks. However, using the async gem with Falcon lets us execute IO-bound tasks directly with clean, simple, performant and scalable code . Plus, this approach dovetails perfectly with Turbo Frames for embedding task results.
-                        </p>
-                          </div>
-                        </div>
-                      </article>
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-pcftruhu"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-oakhqim3"
-                              aria-controls="accordion1-card-body-oakhqim"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span class="schedule-classic-img"
-                                      ><img
-                                        src="images/speakers/Puneet.png"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >12:20 pm to 12:45 pm</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        ><u>From Startup to Scale Up: How to Scale Engineering teams </u></span
-                                      >
-                                      <span class="schedule-classic-author"
-                                        >by
-                                        <span class="schedule-classic-author-name"
-                                          >Puneet Khushwani
-                                          </span>
-                                        - (@Pkhushwani) Coupa</span
-                                      >
-                                    </span>
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="collapse"
-                          id="accordion1-card-body-oakhqim3"
-                          aria-labelledby="accordion1-card-head-pcftruhu"
-                          data-parent="#accordion1"
-                          role="tabpanel"
-                        >
-                          <div class="card-body">
-                            <p>
-                              When teams are small, design decisions can be made over a coffee, code reviews can be done by sitting next to each other. When we have hundreds of developers, what are the areas for which we should implement checks and balances to ensure quality & efficiency isn’t compromised?                             </p>
-                          </div>
-                        </div>
-                      </article>
-
-                      <div class="schedule-classic schedule-classic-simple">
-                        <div class="schedule-classic-content">
-                          <div class="schedule-classic-img">
-                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                              <use xlink:href="images/svg/sprite.svg#clock"></use>
-                            </svg>
-                          </div>
-                          <span class="schedule-classic-time"
-                            >12:45 pm to 2:00 pm</span
-                          ><span class="schedule-classic-title heading-4"
-                            >Lunch</span
-                          >
-                        </div>
-                      </div>
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-xlwtrluc"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-hfymdjbl"
-                              aria-controls="accordion1-card-body-hfymdjbl"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span><img
-                                        src="images/speakers/ruby.png"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >2:00 pm to 2:15 pm</span
-                                      >
-                                      <span
-                                        class="schedule-classic-title heading-4"
-                                        >Energizer</span
-                                      >
-                                      </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                      </article>
-
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-pcftruhu"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-oakhqim321"
-                              aria-controls="accordion1-card-body-oakhqim"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span class="schedule-classic-img"
-                                      ><img
-                                        src="images/speakers/Vishwajeetsingh_Desurkar.png"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >2:15 pm to 2:40 pm</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        ><u>Connecting the Dots: Unleash the Magic of AI in IoT with Ruby! </u></span
-                                      >
-                                      <span class="schedule-classic-author"
-                                        >by
-                                        <span class="schedule-classic-author-name"
-                                          >Vishwajeetsingh Desurkar
-                                          </span
-                                        >
-                                        - (@vishwadesurkar) SimplySmart Technologies</span
-                                      >
-                                    </span>
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="collapse"
-                          id="accordion1-card-body-oakhqim321"
-                          aria-labelledby="accordion1-card-head-pcftruhu"
-                          data-parent="#accordion1"
-                          role="tabpanel"
-                        >
-                          <div class="card-body">
-                            <p>
-                              Revolutionize IoT: Preventive Maintenance & Anomaly Detection with Ruby! Witness language-driven magic as we showcase live demos of Ruby-powered IoT devices detecting anomalies and ensuring optimal performance. Join us to discover how Language and AI empower IoT with preventive maintenance.
-                             </p>
-                          </div>
-                        </div>
-                      </article>
-
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-xlwtrluc"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-hfymdjbl"
-                              aria-controls="accordion1-card-body-hfymdjbl"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span><img
-                                        src="images/speakers/ruby.png"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >2:45 pm to 3:30 pm</span
-                                      >
-                                      <span
-                                        class="schedule-classic-title heading-4"
-                                        >Panel Discussion</span
-                                      >
-                                      </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                      </article>
-                      <div class="schedule-classic schedule-classic-simple">
-                        <div class="schedule-classic-content">
-                          <div class="schedule-classic-img">
-                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                              <use xlink:href="images/svg/sprite.svg#clock"></use>
-                            </svg>
-                          </div>
-                          <span class="schedule-classic-time"
-                            >3:30 pm to 4:00 pm</span
-                          ><span class="schedule-classic-title heading-4"
-                            >Enjoy the coffee break</span
-                          >
-                        </div>
-                      </div>
-
-
-                      <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                          <div class="card-title">
-                            <a
-                              class="collapsed"
-                              id="accordion1-card-head-pcftruhu"
-                              data-toggle="collapse"
-                              data-parent="#accordion1"
-                              href="#accordion1-card-body-oakhqim5"
-                              aria-controls="accordion1-card-body-oakhqim"
-                              aria-expanded="false"
-                              role="button"
-                              ><span class="schedule-classic"
-                                ><span
-                                  class="unit unit-spacing-md align-items-center d-block d-md-flex"
-                                  ><span class="unit-left"
-                                    ><span class="schedule-classic-img"
-                                      ><img
-                                        src="images/speakers/rtdp.jpeg"
-                                        alt=""
-                                        width="122"
-                                        height="122"/></span></span
-                                  ><span class="unit-body"
-                                    ><span class="schedule-classic-content"
-                                      ><span class="schedule-classic-time"
-                                        >4:00 pm to 4:25 pm</span
-                                      ><span
-                                        class="schedule-classic-title heading-4"
-                                        ><u>Dissecting Rails - a different approach to learning Rails. 
-                                        </u></span
-                                      >
-                                      <span class="schedule-classic-author"
-                                        >by
-                                        <span class="schedule-classic-author-name"
-                                          >Ratnadeep Deshmane </span
-                                        >
-                                        - (@rtdp) BetaCraft Technologies</span
-                                      >
-                                    </span>
-                                    </span
-                                  ></span
-                                ></span
-                              ></a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="collapse"
-                          id="accordion1-card-body-oakhqim5"
-                          aria-labelledby="accordion1-card-head-pcftruhu"
-                          data-parent="#accordion1"
-                          role="tabpanel"
-                        >
-                          <div class="card-body">
-                            <p>
-                              After evolving for 15 years, I feel Rails is at a stage where it is a bit overwhelming for new developers to get started, because of the surface area of its features. This talk proposes a different approach to teaching Rails that is much more easier, comprehensive and less confusing.
-                           </p>
-                          </div>
-                        </div>
-                      </article>
-
-                      <div class="schedule-classic schedule-classic-simple">
-                        <div class="schedule-classic-content">
-                          <div class="schedule-classic-img">
-                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                              <use xlink:href="images/svg/sprite.svg#clock"></use>
-                            </svg>
-                          </div>
-                          <span class="schedule-classic-time"
-                            >4:30 pm onwards</span
-                          ><span class="schedule-classic-title heading-4"
-                            >Networking and After Party</span
-                          >
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                 
-                  <div class="tab-pane fade" id="tabs-1-2">
-                    <div
-                      class="card-group-custom card-group-corporate"
-                      id="accordion2"
-                      role="tablist"
-                      aria-multiselectable="false"
-                    >
-
-                      <div class="schedule-classic schedule-classic-simple">
-                        <div class="schedule-classic-content">
-                          <div class="schedule-classic-img">
-                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                              <use xlink:href="images/svg/sprite.svg#clock"></use>
-                            </svg>
-                          </div>
-                          <span class="schedule-classic-time"
-                            >7:00 pm onwards</span
-                          ><span class="schedule-classic-title heading-4"
-                            >Party</span
-                          >
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          -->
       <!-- Section Photo Gallery-->
       <!-- <section
         class="parallax-container section"
