@@ -1,1069 +1,1001 @@
 <!DOCTYPE html>
 <html class="wide" lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,height=device-height,initial-scale=1"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://fonts.googleapis.com/css?family=Barlow%7CBarlow+Condensed:300,400,500,600,700,900"
-    />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      .ie-panel {
-        display: none;
-        background: #212121;
-        padding: 10px 0;
-        box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
-        clear: both;
-        text-align: center;
-        position: relative;
-        z-index: 1;
-      }
-      html.ie-10 .ie-panel,
-      html.lt-ie-10 .ie-panel {
-        display: block;
-      }
-      hr {
-  margin: auto;
-  width: 40%;
-}
-.speaker-card {
-  background-color: white;
-  color: #537ABD;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
-  text-decoration: none;
-  align-items: flex-start;
-  gap: 20px;
-  overflow: hidden;
-  min-height: 100%;
-}
-
-.speaker-left {
-    flex: 0 0 40%; /* Fixed 40% width */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-}
-
-.speaker-photo img {
-    width: 100%; /* Full width of left container */
-    max-width: 150px; /* Optional max width */
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px; /* Square shape with slightly rounded corners */
-    margin-bottom: 10px;
-}
-
-/* Name and Bio styling */
-.speaker-name {
-    font-size: 18px;
-    font-weight: bold;
-    color: #537ABD;
-    margin-bottom: 5px;
-}
-
-.speaker-bio {
-    font-size: 12px;
-    color: #8b8b9a;
-    line-height: normal;
-}
-
-/* Right section styling (60% width) */
-.speaker-right {
-    flex: 1 1 60%; /* Take up 60% width */
-    text-align: center;
-    width: 100%;
-}
-
-.speaker-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #405B8A;
-    margin-bottom: 5px;
-    text-align: center;
-    padding-bottom: 5px;
-}
-
-.speaker-abstract {
-    font-size: 13px;
-    color: #6c757d;
-    line-height: 1.5;
-    text-align: left;
-}
-    .landmark-image {
-        height: 200px; /* Fixed height */
-        width: 100%;
-        object-fit: cover; /* This ensures images cover the area without distortion */
-    }
-    
-    .image-container {
-        height: 250px; /* Same as image height */
-        overflow: hidden;
-    }
-
-    .schedule-classic {
-    display: flex;
-    justify-content: space-between; /* Distribute items evenly */
-    gap: 15px; /* Add spacing between elements */
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.schedule-classic-time {
-    font-weight: bold;
-    color: #d92d2f;
-}
-
-.schedule-classic-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #405B8A;
-}
-
-.schedule-speaker {
-    color: #6c757d;
-}
-
-    </style>
-  </head>
-  <body>
-    <div class="ie-panel">
-      <a href="http://windows.microsoft.com/en-US/internet-explorer/"
-        ><img
-          src="images/warning_bar_0000_us.jpg"
-          height="42"
-          width="820"
-          alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."
-      /></a>
-    </div>
-
-    <div class="preloader">
-      <div class="preloader-body">
-        <div class="cssload-container">
-          <div class="cssload-speeding-wheel"></div>
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Barlow%7CBarlow+Condensed:300,400,500,600,700,900">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="ie-panel">
+            <a href="http://windows.microsoft.com/en-US/internet-explorer/">
+                <img
+                    src="images/warning_bar_0000_us.jpg"
+                    height="42"
+                    width="820"
+                    alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."
+                >
+            </a>
         </div>
-        <p>Loading...</p>
-      </div>
-    </div>
-
-    <div class="page">
-      <!-- Section Header Default-->
-      <header class="section page-header">
-        <!--RD Navbar-->
-        <div class="rd-navbar-wrap">
-          <nav
-            class="rd-navbar rd-navbar-classic"
-            data-layout="rd-navbar-fixed"
-            data-sm-layout="rd-navbar-fixed"
-            data-md-layout="rd-navbar-fixed"
-            data-md-device-layout="rd-navbar-fixed"
-            data-lg-layout="rd-navbar-static"
-            data-lg-device-layout="rd-navbar-static"
-            data-xl-layout="rd-navbar-static"
-            data-xl-device-layout="rd-navbar-static"
-            data-xxl-layout="rd-navbar-static"
-            data-xxl-device-layout="rd-navbar-static"
-            data-lg-stick-up-offset="46px"
-            data-xl-stick-up-offset="46px"
-            data-xxl-stick-up-offset="76px"
-            data-lg-stick-up="true"
-            data-xl-stick-up="true"
-            data-xxl-stick-up="true"
-          >
-            <div
-              class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1"
-              data-rd-navbar-toggle=".rd-navbar-collapse"
-            >
-              <span></span>
+        <div class="preloader">
+            <div class="preloader-body">
+                <div class="cssload-container">
+                    <div class="cssload-speeding-wheel"></div>
+                </div>
+                <p>Loading...</p>
             </div>
-            <div class="rd-navbar-main-outer">
-              <div class="rd-navbar-main">
-                <!--RD Navbar Panel-->
-                <div class="rd-navbar-panel">
-                  <!--RD Navbar Toggle-->
-                  <button
-                    class="rd-navbar-toggle"
-                    data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+        </div>
+        <div class="page">
+            <!-- Section Header Default-->
+            <header class="section page-header">
+                <!--RD Navbar-->
+                <div class="rd-navbar-wrap">
+                    <nav
+                        class="rd-navbar rd-navbar-classic"
+                        data-layout="rd-navbar-fixed"
+                        data-sm-layout="rd-navbar-fixed"
+                        data-md-layout="rd-navbar-fixed"
+                        data-md-device-layout="rd-navbar-fixed"
+                        data-lg-layout="rd-navbar-static"
+                        data-lg-device-layout="rd-navbar-static"
+                        data-xl-layout="rd-navbar-static"
+                        data-xl-device-layout="rd-navbar-static"
+                        data-xxl-layout="rd-navbar-static"
+                        data-xxl-device-layout="rd-navbar-static"
+                        data-lg-stick-up-offset="46px"
+                        data-xl-stick-up-offset="46px"
+                        data-xxl-stick-up-offset="76px"
+                        data-lg-stick-up="true"
+                        data-xl-stick-up="true"
+                        data-xxl-stick-up="true"
+                    >
+                        <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse">
+                            <span></span>
+                        </div>
+                        <div class="rd-navbar-main-outer">
+                            <div class="rd-navbar-main">
+                                <!--RD Navbar Panel-->
+                                <div class="rd-navbar-panel">
+                                    <!--RD Navbar Toggle-->
+                                    <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap">
+                                        <span></span>
+                                    </button
                   >
-                    <span></span></button
-                  ><!--RD Navbar Brand-->
-                  <div class="rd-navbar-brand">
-                    <!--Brand-->
-                    <a class="brand" href="index.html">
-                      <img
-                        class="brand-logo-light"
-                        src="images/ruby-conf-india-logo.webp"
-                        alt=""
-                        style="max-height: 60px;"
-                      />
-                    </a>
-                  </div>
-                </div>
-                <!-- Rd Navbar Navigation-->
-                <div class="rd-navbar-main-element">
-                  <div class="rd-navbar-nav-wrap">
-                    <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item active">
-                        <a class="rd-nav-link" href="#">Home</a>
-                      </li>
-
-                      <li class="rd-nav-item">
-                        <a
-                            class="rd-nav-link"
-                            href="#schedule"
+                                    <!--RD Navbar Brand-->
+                                    <div class="rd-navbar-brand">
+                                        <!--Brand-->
+                                        <a class="brand" href="index.html">
+                                            <img
+                                                class="brand-logo-light"
+                                                src="images/ruby-conf-india-logo.webp"
+                                                alt=""
+                                                style="max-height: 60px;"
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Rd Navbar Navigation-->
+                                <div class="rd-navbar-main-element">
+                                    <div class="rd-navbar-nav-wrap">
+                                        <ul class="rd-navbar-nav">
+                                            <li class="rd-nav-item active">
+                                                <a class="rd-nav-link" href="#">Home</a>
+                                            </li>
+                                            <li class="rd-nav-item">
+                                                <a class="rd-nav-link" href="#schedule">
+                                                    Schedule
+                                                </a>
+                                            </li>
+                                            <li class="rd-nav-item">
+                                                <a class="rd-nav-link" href="#speakers">
+                                                    Speakers
+                                                </a>
+                                            </li>
+                                            <li class="rd-nav-item">
+                                                <a class="rd-nav-link" href="#official-sponsors">
+                                                    Sponsors
+                                                </a
                         >
-                          Schedule
-                        </a> 
-                      </li>
-
-                      <li class="rd-nav-item">
-                        <a
-                            class="rd-nav-link"
-                            href="#speakers"
+                                            </li>
+                                            <li class="rd-nav-item">
+                                                <a class="rd-nav-link" href="#location">
+                                                    Location
+                                                </a
                         >
-                          Speakers
-                        </a> 
-                      </li>
-
-                      <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#official-sponsors"
-                          >Sponsors</a
-                        >
-                      </li>
-                      <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#location"
-                          >Location</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="rd-navbar-collapse">
-                                <a class="button button-primary"
-                                    href="https://flic.kr/s/aHBqjBUojZ"
-                                    target="_blank"
-                                    data-triangle=".button-overlay"><span>Photo Gallery</span><span
-                                        class="button-overlay"></span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="rd-navbar-collapse d-none">
+                                    <a
+                                        class="button button-primary"
+                                        href="https://flic.kr/s/aHBqjBUojZ"
+                                        target="_blank"
+                                        data-triangle=".button-overlay"
+                                    >
+                                        <span>Photo Gallery</span>
+                                        <span class="button-overlay"></span>
+                                    </a>
+                                </div>
                             </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
-
-      <!-- Section Swiper Slider-->
-      <section
-        class="section section-swiper-absoulte context-dark text-center wow fadeIn"
-      >
-        <!-- Waves--><canvas
-          class="waves"
-          data-speed="5"
-          data-wave-width="150%"
-          data-animation="SineInOut"
-        ></canvas
-        ><!-- Swiper Content-->
-        <div class="section-swiper-content">
-          <div class="container">
-            <div class="row justify-content-lg-center">
-              <div class="col-lg-10">
-                <div class="badge-promo wow fadeScale" data-wow-delay=".6s">
-                  <span class="badge-promo-text">29th - 30th Nov, 2024
-                  </span>
-                  <svg
-                    class="badge-promo-icon"
-                    width="319"
-                    height="49"
-                    viewBox="0 0 319 49"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0 0H319L299 25L319 49H0L20 25L0 0Z"
-                      fill="url( #svg-gradient-primary )"
-                    ></path>
-                    <path
-                      opacity="0.08"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0 0H319L299 25L319 49L0 0Z"
-                      fill="white"
-                    ></path>
-                  </svg>
+                        </div>
+                    </nav>
                 </div>
-                <h1
-                  class="wow fadeScale"
-                  data-caption-animate="fadeInUp"
-                  data-caption-delay="100"
-                  data-caption-duration="900"
+            </header>
+            <!-- Section Swiper Slider-->
+            <section class="section section-swiper-absoulte context-dark text-center wow fadeIn">
+                <!-- Waves-->
+                <canvas
+                    class="waves"
+                    data-speed="5"
+                    data-wave-width="150%"
+                    data-animation="SineInOut"
                 >
-                  RUBYCONF INDIA 2024
-                </h1>
-                <!-- List Inline-->
-                <ul
-                  class="list-inline list-inline-md wow"
-                  data-splitting
-                  data-wow-delay="1.5s"
-                >
-                  <li>
-                    <div class="unit unit-spacing-xs align-items-center">
-                      <div class="unit-left line-height-reset">
-                        <svg class="svg-icon-sm svg-icon-primary" role="img">
-                          <use
-                            xlink:href="images/svg/sprite.svg#earth-globe"
-                          ></use>
-                        </svg>
-                      </div>
-                      <div class="unit-body">
-                        <h5 class="text-spacing-100">
-                          <span class="big"
-                            >Clarks Amer Hotel, Jaipur, India</span
-                          >
-                        </h5>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="unit unit-spacing-xs align-items-center">
-                      <div class="unit-left line-height-reset">
-                        <svg class="svg-icon-sm svg-icon-primary" role="img">
-                          <use
-                            xlink:href="images/svg/sprite.svg#small-calendar"
-                          ></use>
-                        </svg>
-                      </div>
-                      <div class="unit-body">
-                        <h5 class="text-spacing-100">
-                          <span class="big"
-                            ><time datetime="2023-08-26"
-                              >29th - 30th Nov, 2024</time
-                            ></span
-                          >
-                        </h5>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Swiper Slider Absolute-->
-        <div
-          class="swiper-container swiper-slider swiper-slider-1"
-          data-loop="true"
-          data-simulate-touch="false"
-          data-autoplay="8500"
-          data-direction="horizontal"
-          data-effect="fade"
+                </canvas
         >
-          <div class="swiper-wrapper">
-            <!-- Swiper Slide 01-->
-            <div
-              class="swiper-slide"
-              data-slide-bg="images/slide-01-1894x1042.jpg"
-            ></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section Biggest 2019 Digital Conference-->
-      <section class="section section-lg bg-default wow fadeIn">
-        <div class="container">
-          <div class="row row-30 justify-content-center">
-            <div class="col-md-10 col-lg-6 col-xl-5">
-              <h6>about event</h6>
-              <h3 class="heading-lg-postfix-15">
-                A Ruby Community Conference, Indian edition
-              </h3>
-              <p>
-                RubyConf India is a global event complementing other RubyConf
-                events across the world.
-              </p>
-              <p>
-                This year our event is of 2 days, single track focused on
-                Ruby Language, Framework and Tools.
-              </p>
-              <p>
-                Note: The conference is entirely in English.
-              </p>
-              <!-- List Inline-->
-              <ul class="list-inline list-inline-xl">
-                <li>
-                  <div class="unit">
-                    <div class="unit-left">
-                      <svg class="svg-icon-sm svg-icon-primary" role="img">
-                        <use
-                          xlink:href="images/svg/sprite.svg#earth-globe"
-                        ></use>
-                      </svg>
+                <!-- Swiper Content-->
+                <div class="section-swiper-content">
+                    <div class="container">
+                        <div class="row justify-content-lg-center">
+                            <div class="col-lg-10">
+                                <div class="badge-promo wow fadeScale" data-wow-delay=".6s">
+                                    <span class="badge-promo-text">
+                                        12th - 13th Sep, 2025
+                                    </span>
+                                    <svg
+                                        class="badge-promo-icon"
+                                        width="319"
+                                        height="49"
+                                        viewBox="0 0 319 49"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M0 0H319L299 25L319 49H0L20 25L0 0Z"
+                                            fill="url( #svg-gradient-primary )"
+                                        ></path>
+                                        <path
+                                            opacity="0.08"
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M0 0H319L299 25L319 49L0 0Z"
+                                            fill="white"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <h1
+                                    class="wow fadeScale"
+                                    data-caption-animate="fadeInUp"
+                                    data-caption-delay="100"
+                                    data-caption-duration="900"
+                                >
+                                    RUBYCONF INDIA 2025
+                                </h1>
+                                <!-- List Inline-->
+                                <ul class="list-inline list-inline-md wow" data-splitting data-wow-delay="1.5s">
+                                    <li>
+                                        <div class="unit unit-spacing-xs align-items-center">
+                                            <div class="unit-left line-height-reset">
+                                                <svg class="svg-icon-sm svg-icon-primary" role="img">
+                                                    <use xlink:href="images/svg/sprite.svg#earth-globe"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="unit-body">
+                                                <h5 class="text-spacing-100">
+                                                    <span class="big">
+                                                        Clarks Amer Hotel, Jaipur, India
+                                                    </span
+                          >
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="unit unit-spacing-xs align-items-center">
+                                            <div class="unit-left line-height-reset">
+                                                <svg class="svg-icon-sm svg-icon-primary" role="img">
+                                                    <use xlink:href="images/svg/sprite.svg#small-calendar"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="unit-body">
+                                                <h5 class="text-spacing-100">
+                                                    <span class="big">
+                                                        <time datetime="2025-09-12">
+                                                            12th - 13th Sep, 2025
+                                                        </time
+                            >
+                                                    </span
+                          >
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="unit-body">
-                      <h5>Where</h5>
-                      <p>
-                        Clarks Amer Hotel
+                </div>
+                <!-- Swiper Slider Absolute-->
+                <div
+                    class="swiper-container swiper-slider swiper-slider-1"
+                    data-loop="true"
+                    data-simulate-touch="false"
+                    data-autoplay="8500"
+                    data-direction="horizontal"
+                    data-effect="fade"
+                >
+                    <div class="swiper-wrapper">
+                        <!-- Swiper Slide 01-->
+                        <div class="swiper-slide" data-slide-bg="images/slide-01-1894x1042.jpg"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section Biggest 2019 Digital Conference-->
+            <section class="section section-lg bg-default wow fadeIn">
+                <div class="container">
+                    <div class="row row-30 justify-content-center">
+                        <div class="col-md-10 col-lg-6 col-xl-5">
+                            <h6>Discover the Spirit of Ruby: Connect, Code, Celebrate!</h6>
+                            <h3 class="heading-lg-postfix-15">
+                                A Ruby Community Conference, Indian Edition
+                            </h3>
+
+                            <p>
+                                RubyConf India is a global event complementing other RubyConf events across the world.
+                            </p>
+                            <p>
+                                This year our event is of 2 days, single track focused on Ruby Language, Framework, and Tools.
+                            </p>
+                            <p>
+                                <strong class="color-black">Note:</strong> The entire conference will be in English, bringing together Ruby enthusiasts from across the globe for an unforgettable experience!
+                            </p>
+                            <!-- List Inline-->
+                            <ul class="list-inline list-inline-xl">
+                                <li>
+                                    <div class="unit">
+                                        <div class="unit-left">
+                                            <svg class="svg-icon-sm svg-icon-primary" role="img">
+                                                <use xlink:href="images/svg/sprite.svg#earth-globe"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="unit-body">
+                                            <h5>Where</h5>
+                                            <p>
+                                                Clarks Amer Hotel
                         Jawahar Lal Nehru Marg, Opposite Fortis Escorts Hospital, 
                         Jaipur, Rajasthan 302018
-                      </p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="unit">
-                    <div class="unit-left">
-                      <svg class="svg-icon-sm svg-icon-primary" role="img">
-                        <use
-                          xlink:href="images/svg/sprite.svg#small-calendar"
-                        ></use>
-                      </svg>
-                    </div>
-                    <div class="unit-body">
-                      <h5>When</h5>
-                      <p>
-                        <time datetime="2022-08-26">29th - 30th Nov, 2024</time>
-                      </p>
-                      <p>
-                        10:00 AM - 6:00 PM
-                      </p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <div class ="row">
-              <div class ="col-md-3">
-              <a
-                class="button button-primary"
-                href="https://flic.kr/s/aHBqjBUojZ"
-                target="_blank"
-                data-triangle=".button-overlay"
-                ><span>Photo Gallery</span><span class="button-overlay"></span
-              ></a>
-              </div>
-              <div class = "col-md-3"> </div>
-              <div class = "col-md-3">
-              <!-- <a
-                class="button button-primary"
-                href="https://www.papercall.io/rubyconf-india-2024"
-                data-triangle=".button-overlay"
-                target="_blank"
-                ><span>Submit CFP</span><span class="button-overlay"></span
-             ></a>  -->
-              </div></div>
-            </div>
-            <div class="col-md-10 col-lg-6 col-xl-7 text-md-right">
-              <!-- Image Box-->
-              <div class="images-box">
-                <div class="images-box-item images-box-item-right">
-                  <div class="wow fadeScale">
-                    <img
-                      src="images/home-1-01-470x590.jpg"
-                      alt=""
-                      width="470"
-                      height="590"
-                    />
-                  </div>
-                </div>
-                <div class="images-box-item images-box-item-left">
-                  <div class="wow fadeScale">
-                    <img
-                      src="images/home-1-02-270x257.jpg"
-                      alt=""
-                      width="270"
-                      height="257"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled">
-        <div class="container">
-          <h6><a id="schedule">RubyConf India 2024</a></h6>
-          <br>
-          <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
-            <ul class="nav nav-tabs">
-              <li class="nav-item" role="presentation">
-                <a class="nav-link nav-link-secondary-darker active show" href="#tabs-1-1" data-toggle="tab" data-triangle=".nav-link-overlay">
-                  <span class="nav-link-overlay" style="border-top-width: 95px; border-left-width: 281.983px;"></span>
-                  <span class="nav-link-title">Nov 28, 2024</span>
-                </a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link nav-link-secondary-darker" href="#tabs-2-1" data-toggle="tab" data-triangle=".nav-link-overlay">
-                  <span class="nav-link-overlay" style="border-top-width: 95px; border-left-width: 281.983px;"></span>
-                  <span class="nav-link-title">Nov 29, 2024</span>
-                </a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link nav-link-secondary-darker" href="#tabs-3-1" data-toggle="tab" data-triangle=".nav-link-overlay">
-                  <span class="nav-link-overlay" style="border-top-width: 95px; border-left-width: 281.983px;"></span>
-                  <span class="nav-link-title">Nov 30, 2024</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-      
-          <div class="tab-content">
-            <!-- Day 1 Schedule -->
-            <div class="tab-pane fade active show" id="tabs-1-1">
-              <div class="schedule-day" id="day-1">
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div class="card-title">
-                      <p class="schedule-classic-time">3:00 PM - 6:00 PM</p>
-                      <p class="schedule-classic-title">Pre-Registration</p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
-      
-            <!-- Day 2 Schedule -->
-            <div class="tab-pane fade" id="tabs-2-1">
-              <div class="schedule-day" id="day-2">
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">8:00 AM - 9:45 AM</p>
-                      <p class="schedule-classic-title">Registration</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">9:45 AM - 10:00 AM</p>
-                      <p class="schedule-classic-title">Kickoff</p>
-                      <p class="schedule-speaker">Gautam Rege</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">10:00 AM - 10:30 AM</p>
-                      <p class="schedule-classic-title">Puma, Falcon, Pitchfork: Navigating the Ruby Web Server Landscape</p>
-                      <p class="schedule-speaker">Manu Janardhnan</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">10:30 AM - 11:00 AM</p>
-                      <p class="schedule-classic-title">Taming Flaky Specs: Diagnosing Test Failures in Ruby</p>
-                      <p class="schedule-speaker">Sriram V</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">11:00 AM - 11:30 AM</p>
-                      <p class="schedule-classic-title">Tea Break</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">11:30 AM - 12:00 PM</p>
-                      <p class="schedule-classic-title">Understanding Garbage Collection in Ruby</p>
-                      <p class="schedule-speaker">Puneet Khushwani</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">12:00 PM - 12:30 PM</p>
-                      <p class="schedule-classic-title">Ruby Mediator</p>
-                      <p class="schedule-speaker">Rohit Mukherjee</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">12:30 PM - 2:30 PM</p>
-                      <p class="schedule-classic-title">Lunch</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">2:30 PM - 2:45 PM</p>
-                      <p class="schedule-classic-title">Sponsor Showcase</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">2:45 PM - 3:15 PM</p>
-                      <p class="schedule-classic-title">Metaprogramming: Unraveling the Magic</p>
-                      <p class="schedule-speaker">Chaitali Khangar</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">3:15 PM - 3:45 PM</p>
-                      <p class="schedule-classic-title">Solid Queue - Default Active Job Adaptor in Rails 8</p>
-                      <p class="schedule-speaker">Anush Kumar</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">3:45 PM - 4:30 PM</p>
-                      <p class="schedule-classic-title">Tea Break</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">4:30 PM - 5:00 PM</p>
-                      <p class="schedule-classic-title">From Curiosity to Confusion: My Journey of Creating Confuscript in Ruby</p>
-                      <p class="schedule-speaker">Keshav Biswa</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">5:00 PM - 5:30 PM</p>
-                      <p class="schedule-classic-title">The Harvey Dent Dilemma: Ruby's White Knight Rises (or Falls)</p>
-                      <p class="schedule-speaker">Vishwajeetsingh Desurkar</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">5:30 PM - 6:30 PM</p>
-                      <p class="schedule-classic-title">Flash Talks</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">6:30 PM - 7:00 PM</p>
-                      <p class="schedule-classic-title">Networking</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">7:30 PM onwards</p>
-                      <p class="schedule-classic-title">Party</p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
-      
-            <!-- Day 3 Schedule -->
-            <div class="tab-pane fade" id="tabs-3-1">
-              <div class="schedule-day" id="day-3">
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">10:00 AM - 10:30 AM</p>
-                      <p class="schedule-classic-title">Reading Ruby - a visual walkthrough of the source code</p>
-                      <p class="schedule-speaker">Ratnadeep Deshmane</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">10:30 AM - 11:00 AM</p>
-                      <p class="schedule-classic-title">Rails Upgrade Mastery: Best Practices for Large-Scale Enterprise Applications</p>
-                      <p class="schedule-speaker">Sumit Dey</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">11:00 AM - 11:30 AM</p>
-                      <p class="schedule-classic-title">Tea Break</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">11:30 AM - 12:00 PM</p>
-                      <p class="schedule-classic-title">Power of Gemini and How Developers can Harness it</p>
-                      <p class="schedule-speaker">Ashish Tendulkar</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">12:00 PM - 12:30 PM</p>
-                      <p class="schedule-classic-title">If You Can Whisk, You Can Code</p>
-                      <p class="schedule-speaker">Sonal Sachdev</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">12:30 PM - 2:00 PM</p>
-                      <p class="schedule-classic-title">Lunch</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">2:00 PM - 3:00 PM</p>
-                      <p class="schedule-classic-title">Panel Discussion</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">3:00 PM - 4:00 PM</p>
-                      <p class="schedule-classic-title">Flash Talks</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">4:00 PM - 4:15 PM</p>
-                      <p class="schedule-classic-title">Vote of Thanks</p>
-                    </div>
-                  </div>
-                </article>
-                <article class="card card-corporate">
-                  <div class="card-header">
-                    <div>
-                      <p class="schedule-classic-time">4:15 PM onwards</p>
-                      <p class="schedule-classic-title">Tea Break</p>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      
-        <section class="section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled">
-          <div class="container">
-            <h6><a id="speakers">Our Speakers</a></h6>
-            <br/>
-            <div class="container">
-              <div class="row">
-                  <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://www.linkedin.com/in/anush-kumar-s/" class="speaker-card d-flex" target="_blank">
-                          <div class="speaker-right">
-                              <div class="speaker-title">Solid Queue - Default Active Job Adaptor in Rails 8</div>
-                              <div class="speaker-abstract">
-                                  Struggling with Sidekiq config or performance issues with delayed_jobs? Join our talk on "Solid Queue," a new Active Job adapter that boosts background job performance and simplifies setup. It will soon be the default in Rails 8!
-                              </div>
-                          </div>
-                          <div class="speaker-left">
-                              <div class="speaker-photo">
-                                  <img src="images/speakers/AnushKumar.JPG" alt="Anush Kumar" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                              </div>
-                              <div class="speaker-name">Anush Kumar (AK)</div>
-                              <div class="speaker-bio">Software Engineer at Rently</div>
-                          </div>
-                      </a>
-                  </div>
-
-                  <div class="col-lg-6 col-md-6 mb-4">
-                    <a href="https://www.linkedin.com/in/ashishtendulkar/" class="speaker-card d-flex" target="_blank">
-                        <div class="speaker-right">
-                            <div class="speaker-title">Power of Gemini and How Developers can Harness it</div>
-                            <div class="speaker-abstract">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="unit">
+                                        <div class="unit-left">
+                                            <svg class="svg-icon-sm svg-icon-primary" role="img">
+                                                <use xlink:href="images/svg/sprite.svg#small-calendar"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="unit-body">
+                                            <h5>When</h5>
+                                            <p>
+                                                <time datetime="2022-08-26">12th - 13th Sep, 2025</time>
+                                            </p>
+                                            <p>
+                                                10:00 AM - 6:00 PM
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-md-3 d-none">
+                                    <a
+                                        class="button button-primary"
+                                        href="https://flic.kr/s/aHBqjBUojZ"
+                                        target="_blank"
+                                        data-triangle=".button-overlay"
+                                    >
+                                        <span>Photo Gallery</span>
+                                        <span class="button-overlay">
+                                        </span
+              >
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a
+                                        class="button button-primary"
+                                        href="https://www.papercall.io/rubyconf-india-2025"
+                                        data-triangle=".button-overlay"
+                                        target="_blank"
+                                    >
+                                        <span>Share Your Passion: Submit Your CFP!</span>
+                                        <span class="button-overlay">
+                                        </span
+             >
+                                    </a>
+                                </div>
+                                <div class="col-md-2"></div>
                             </div>
                         </div>
-                        <div class="speaker-left">
-                            <div class="speaker-photo">
-                                <img src="images/speakers/AshishTendulkar.jpeg" alt="Anush Kumar" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                        <div class="col-md-10 col-lg-6 col-xl-7 text-md-right">
+                            <!-- Image Box-->
+                            <div class="images-box">
+                                <div class="images-box-item images-box-item-right">
+                                    <div class="wow fadeScale">
+                                        <img
+                                            src="images/home-1-01-470x590.jpg"
+                                            alt=""
+                                            width="470"
+                                            height="590"
+                                        >
+                                    </div>
+                                </div>
+                                <div class="images-box-item images-box-item-left">
+                                    <div class="wow fadeScale">
+                                        <img
+                                            src="images/home-1-02-270x257.jpg"
+                                            alt=""
+                                            width="270"
+                                            height="257"
+                                        >
+                                    </div>
+                                </div>
                             </div>
-                            <div class="speaker-name">Ashish Tendulkar</div>
-                            <div class="speaker-bio">AI/ML Leader at Google</div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-          
-                  <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://www.linkedin.com/in/chaitalikhangar/" class="speaker-card d-flex" target="_blank">
-                          <div class="speaker-right">
-                              <div class="speaker-title">Metaprogramming: Unraveling the Magic</div>
-                              <div class="speaker-abstract">
-                                  Discover Ruby metaprogramming! Learn powerful techniques to make your code dynamic and adaptable while avoiding added complexity. Join us to master the art of clean, flexible Ruby!
-                              </div>
-                          </div>
-                          <div class="speaker-left">
-                              <div class="speaker-photo">
-                                  <img src="images/speakers/chaitaliK.jpg" alt="Chaitali Khangar" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                              </div>
-                              <div class="speaker-name">Chaitali Khangar</div>
-                              <div class="speaker-bio">Technical Architect at Sedin Technologies - RailsFactory</div>
-                          </div>
-                      </a>
-                  </div>
-          
-                  <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://keshavbiswa.com" class="speaker-card d-flex" target="_blank">
-                          <div class="speaker-right">
-                              <div class="speaker-title">From Curiosity to Confusion: My Journey of Creating Confuscript in Ruby</div>
-                              <div class="speaker-abstract">
-                                  Discover this unique language designed to challenge conventional coding logic, exploring its syntax, quirks, and the playful philosophy behind it. Perfect for those curious about unconventional programming perspectives—join us to unravel the confusion!
-                              </div>
-                          </div>
-                          <div class="speaker-left">
-                              <div class="speaker-photo">
-                                  <img src="images/speakers/KeshavBiswa.jpg" alt="Keshav Biswa" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                              </div>
-                              <div class="speaker-name">Keshav Biswa</div>
-                              <div class="speaker-bio">Senior Software Engineer at Saeloun</div>
-                          </div>
-                      </a>
-                  </div>
-          
-                  <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://manu-j.com/" class="speaker-card d-flex" target="_blank">
-                          <div class="speaker-right">
-                              <div class="speaker-title">Puma, Falcon, Pitchfork: Navigating the Ruby Web Server Landscape</div>
-                              <div class="speaker-abstract">
-                                  Puma's Ruby server dominance is being challenged by Falcon's fiber-based concurrency and Pitchfork's memory efficiency. This talk aims to explore these choices and guide you to select the most suitable server for your unique application needs.
-                              </div>
-                          </div>
-                          <div class="speaker-left">
-                              <div class="speaker-photo">
-                                  <img src="images/speakers/ManuJ.jpg" alt="Manu Janardhanan" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                              </div>
-                              <div class="speaker-name">Manu Janardhanan</div>
-                              <div class="speaker-bio">Engineering Lead at Lodgistics</div>
-                          </div>
-                      </a>
-                  </div>
-          
-                  <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://www.linkedin.com/in/puneet-khushwani-01012726/" class="speaker-card d-flex" target="_blank">
-                          <div class="speaker-right">
-                              <div class="speaker-title">Understanding Garbage Collection in Ruby</div>
-                              <div class="speaker-abstract">
-                                Unlike languages like C, Ruby's automatic garbage collection frees us from manual memory management worries. Discover how it works behind the scenes. Also discover how misconfigured GC can harm performance.
-                              </div>
-                          </div>
-                          <div class="speaker-left">
-                              <div class="speaker-photo">
-                                  <img src="images/speakers/PuneetKhushwani.png" alt="Puneet Khushwani" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                              </div>
-                              <div class="speaker-name">Puneet Khushwani</div>
-                              <div class="speaker-bio">Sr. Engineering Manager at Coupa Software</div>
-                          </div>
-                      </a>
-                  </div>
-          
-                  <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://x.com/rtdp" class="speaker-card d-flex" target="_blank">
-                          <div class="speaker-right">
-                              <div class="speaker-title">Reading Ruby - a visual walkthrough of the source code</div>
-                              <div class="speaker-abstract">
-                                  Curious about Ruby's internals but want to avoid diving deep into C? Interested in contributing to Ruby and need a primer before tackling the code? This talk covers both, simplifying the complexity with visuals, diagrams, and a touch of C.
-                              </div>
-                          </div>
-                          <div class="speaker-left">
-                              <div class="speaker-photo">
-                                  <img src="images/speakers/RatnadeepDeshmane.JPG" alt="Ratnadeep Deshmane" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                              </div>
-                              <div class="speaker-name">Ratnadeep Deshmane</div>
-                              <div class="speaker-bio">Founder at BetaCraft Technologies</div>
-                          </div>
-                      </a>
-                  </div>
-          
-                  <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://www.linkedin.com/in/rohit-mukherjee-863b322b/" class="speaker-card d-flex" target="_blank">
-                          <div class="speaker-right">
-                              <div class="speaker-title">Ruby Mediator</div>
-                              <div class="speaker-abstract">
-                                  The mediator design pattern in Ruby is a behavioral pattern that reduces coupling between program components. It does this by allowing components to communicate indirectly through a mediator object instead of directly.
-                              </div>
-                          </div>
-                          <div class="speaker-left">
-                              <div class="speaker-photo">
-                                  <img src="images/speakers/RohitMukherjee.jpg" alt="Rohit Mukherjee" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                              </div>
-                              <div class="speaker-name">Rohit Mukherjee</div>
-                              <div class="speaker-bio">Technical Lead at Rently</div>
-                          </div>
-                      </a>
-                  </div>
-          
-                  <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://www.linkedin.com/in/sonal-sachdev13/" class="speaker-card d-flex" target="_blank">
-                          <div class="speaker-right">
-                              <div class="speaker-title">If You Can Whisk, You Can Code</div>
-                              <div class="speaker-abstract">
-                                  This talk will debunk common coding myths and showcase the essential tools for success, proving that, like Remy the rat, creativity and confidence are all you need. Get ready to whisk your way into coding!
-                              </div>
-                          </div>
-                          <div class="speaker-left">
-                              <div class="speaker-photo">
-                                  <img src="images/speakers/SonalSachdev.jpeg" alt="Sonal Sachdev" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                              </div>
-                              <div class="speaker-name">Sonal Sachdev</div>
-                              <div class="speaker-bio">Software Engineer at Josh Software</div>
-                          </div>
-                      </a>
-                  </div>
-
-                  <div class="col-lg-6 col-md-6 mb-4">
-                    <a href="https://srira.me/" class="speaker-card d-flex" target="_blank">
-                        <div class="speaker-right">
-                            <div class="speaker-title">Taming Flaky Specs: Diagnosing Test Failures in Ruby</div>
-                            <div class="speaker-abstract">
-                                Flaky specs can cause random test failures, disrupting CI pipelines and eroding confidence in your test suite. In this talk, we'll explore common root causes of flaky specs and dive into strategies for diagnosing rare, hard-to-reproduce issues to help stabilize your test suite.
+            </section>
+            <section class="section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled d-none">
+                <div class="container">
+                    <h6>
+                        <a id="schedule">RubyConf India 2025</a>
+                    </h6>
+                    <br>
+                    <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item" role="presentation">
+                                <a
+                                    class="nav-link nav-link-secondary-darker active show"
+                                    href="#tabs-1-1"
+                                    data-toggle="tab"
+                                    data-triangle=".nav-link-overlay"
+                                >
+                                    <span class="nav-link-overlay" style="border-top-width: 95px; border-left-width: 281.983px;"></span>
+                                    <span class="nav-link-title">Nov 28, 2025</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a
+                                    class="nav-link nav-link-secondary-darker"
+                                    href="#tabs-2-1"
+                                    data-toggle="tab"
+                                    data-triangle=".nav-link-overlay"
+                                >
+                                    <span class="nav-link-overlay" style="border-top-width: 95px; border-left-width: 281.983px;"></span>
+                                    <span class="nav-link-title">Nov 29, 2025</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a
+                                    class="nav-link nav-link-secondary-darker"
+                                    href="#tabs-3-1"
+                                    data-toggle="tab"
+                                    data-triangle=".nav-link-overlay"
+                                >
+                                    <span class="nav-link-overlay" style="border-top-width: 95px; border-left-width: 281.983px;"></span>
+                                    <span class="nav-link-title">Nov 30, 2025</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <!-- Day 1 Schedule -->
+                        <div class="tab-pane fade active show" id="tabs-1-1">
+                            <div class="schedule-day" id="day-1">
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div class="card-title">
+                                            <p class="schedule-classic-time">3:00 PM - 6:00 PM</p>
+                                            <p class="schedule-classic-title">Pre-Registration</p>
+                                        </div>
+                                    </div>
+                                </article>
                             </div>
                         </div>
-                        <div class="speaker-left">
-                            <div class="speaker-photo">
-                                <img src="images/speakers/Sriram V.jpg" alt="Sriram V" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                        <!-- Day 2 Schedule -->
+                        <div class="tab-pane fade" id="tabs-2-1">
+                            <div class="schedule-day" id="day-2">
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">8:00 AM - 9:45 AM</p>
+                                            <p class="schedule-classic-title">Registration</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">9:45 AM - 10:00 AM</p>
+                                            <p class="schedule-classic-title">Kickoff</p>
+                                            <p class="schedule-speaker">Gautam Rege</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">10:00 AM - 10:30 AM</p>
+                                            <p class="schedule-classic-title">Puma, Falcon, Pitchfork: Navigating the Ruby Web Server Landscape</p>
+                                            <p class="schedule-speaker">Manu Janardhnan</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">10:30 AM - 11:00 AM</p>
+                                            <p class="schedule-classic-title">Taming Flaky Specs: Diagnosing Test Failures in Ruby</p>
+                                            <p class="schedule-speaker">Sriram V</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">11:00 AM - 11:30 AM</p>
+                                            <p class="schedule-classic-title">Tea Break</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">11:30 AM - 12:00 PM</p>
+                                            <p class="schedule-classic-title">Understanding Garbage Collection in Ruby</p>
+                                            <p class="schedule-speaker">Puneet Khushwani</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">12:00 PM - 12:30 PM</p>
+                                            <p class="schedule-classic-title">Ruby Mediator</p>
+                                            <p class="schedule-speaker">Rohit Mukherjee</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">12:30 PM - 2:30 PM</p>
+                                            <p class="schedule-classic-title">Lunch</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">2:30 PM - 2:45 PM</p>
+                                            <p class="schedule-classic-title">Sponsor Showcase</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">2:45 PM - 3:15 PM</p>
+                                            <p class="schedule-classic-title">Metaprogramming: Unraveling the Magic</p>
+                                            <p class="schedule-speaker">Chaitali Khangar</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">3:15 PM - 3:45 PM</p>
+                                            <p class="schedule-classic-title">Solid Queue - Default Active Job Adaptor in Rails 8</p>
+                                            <p class="schedule-speaker">Anush Kumar</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">3:45 PM - 4:30 PM</p>
+                                            <p class="schedule-classic-title">Tea Break</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">4:30 PM - 5:00 PM</p>
+                                            <p class="schedule-classic-title">From Curiosity to Confusion: My Journey of Creating Confuscript in Ruby</p>
+                                            <p class="schedule-speaker">Keshav Biswa</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">5:00 PM - 5:30 PM</p>
+                                            <p class="schedule-classic-title">The Harvey Dent Dilemma: Ruby's White Knight Rises (or Falls)</p>
+                                            <p class="schedule-speaker">Vishwajeetsingh Desurkar</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">5:30 PM - 6:30 PM</p>
+                                            <p class="schedule-classic-title">Flash Talks</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">6:30 PM - 7:00 PM</p>
+                                            <p class="schedule-classic-title">Networking</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">7:30 PM onwards</p>
+                                            <p class="schedule-classic-title">Party</p>
+                                        </div>
+                                    </div>
+                                </article>
                             </div>
-                            <div class="speaker-name">Sriram V</div>
-                            <div class="speaker-bio">Associate RoR Developer at Rently</div>
                         </div>
-                    </a>
+                        <!-- Day 3 Schedule -->
+                        <div class="tab-pane fade" id="tabs-3-1">
+                            <div class="schedule-day" id="day-3">
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">10:00 AM - 10:30 AM</p>
+                                            <p class="schedule-classic-title">Reading Ruby - a visual walkthrough of the source code</p>
+                                            <p class="schedule-speaker">Ratnadeep Deshmane</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">10:30 AM - 11:00 AM</p>
+                                            <p class="schedule-classic-title">Rails Upgrade Mastery: Best Practices for Large-Scale Enterprise Applications</p>
+                                            <p class="schedule-speaker">Sumit Dey</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">11:00 AM - 11:30 AM</p>
+                                            <p class="schedule-classic-title">Tea Break</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">11:30 AM - 12:00 PM</p>
+                                            <p class="schedule-classic-title">Power of Gemini and How Developers can Harness it</p>
+                                            <p class="schedule-speaker">Ashish Tendulkar</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">12:00 PM - 12:30 PM</p>
+                                            <p class="schedule-classic-title">If You Can Whisk, You Can Code</p>
+                                            <p class="schedule-speaker">Sonal Sachdev</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">12:30 PM - 2:00 PM</p>
+                                            <p class="schedule-classic-title">Lunch</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">2:00 PM - 3:00 PM</p>
+                                            <p class="schedule-classic-title">Panel Discussion</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">3:00 PM - 4:00 PM</p>
+                                            <p class="schedule-classic-title">Flash Talks</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">4:00 PM - 4:15 PM</p>
+                                            <p class="schedule-classic-title">Vote of Thanks</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="card card-corporate">
+                                    <div class="card-header">
+                                        <div>
+                                            <p class="schedule-classic-time">4:15 PM onwards</p>
+                                            <p class="schedule-classic-title">Tea Break</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-lg-6 col-md-6 mb-4">
-                  <a href="https://www.linkedin.com/in/sumit-dey-035/" class="speaker-card d-flex" target="_blank">
-                      <div class="speaker-right">
-                          <div class="speaker-title">Rails Upgrade Mastery: Best Practices for Large-Scale Enterprise Applications</div>
-                          <div class="speaker-abstract">
-                              Upgrading Rails in an enterprise software? Learn from Coupa's journey! This talk will share our challenges, strategies, and best practices based on our experience of upgrading from Rails 6 to 7.Take away valuable insights and practical tips for a seamless Rails upgrade at scale.
-                          </div>
-                      </div>
-                      <div class="speaker-left">
-                          <div class="speaker-photo">
-                              <img src="images/speakers/sumitDey.jpg" alt="Sumit Dey" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                          </div>
-                          <div class="speaker-name">Sumit Dey</div>
-                          <div class="speaker-bio">Lead Software Engineer at Coupa</div>
-                      </div>
-                  </a>
-              </div>
-          
-                  <div class="col-lg-6 col-md-6 mb-4">
-                      <a href="https://www.linkedin.com/in/vishwajeetsinghd/" class="speaker-card d-flex" target="_blank">
-                          <div class="speaker-right">
-                              <div class="speaker-title">The Harvey Dent Dilemma: Ruby's White Knight Rises (or Falls)</div>
-                              <div class="speaker-abstract">
-                                  Frozen strings, memoization, and Ruby's other quirky features can be your performance secret weapon, but misuse can lead to a performance nightmare. Let's dive into the rabbit hole of Ruby optimization and learn how to avoid the traps while writing code that's both fast and fun.
-                              </div>
-                          </div>
-                          <div class="speaker-left">
-                              <div class="speaker-photo">
-                                  <img src="images/speakers/Vishwa.png" alt="Vishwajeetsingh Desurkar" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                              </div>
-                              <div class="speaker-name">Vishwajeetsingh Desurkar</div>
-                              <div class="speaker-bio">Principal Engineer at SimplySmart Technologies</div>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-          </div>
-          
-            </div>
-        </section>
-      
-        <section class="section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled">
-          <div class="container">
-            <h6><a id="panlists">Panelists</a></h6>
-            <br/>
-            <div class="row">
-              <div class="col-md-6 mb-4">
-                  <a href="https://www.linkedin.com/in/datta-deshmukh-52091121/" class="speaker-card d-flex align-items-center" target="_blank">
-                      <div class="speaker-photo me-3">
-                          <img src="images/speakers/DuttaDeshmukh.jpeg" alt="Datta Deshmukh" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                      </div>
-                      <div class="speaker-info">
-                          <div class="speaker-name">Datta Deshmukh</div>
-                          <p class="speaker-bio">Senior Manager, Performance Engineering @Coupa</p>
-                      </div>
-                  </a>
-              </div>
-              <div class="col-md-6 mb-4">
-                  <a href="https://www.linkedin.com/in/surbhi-gupta-8895947/" class="speaker-card d-flex align-items-center" target="_blank">
-                      <div class="speaker-photo me-3">
-                          <img src="images/speakers/SurbhiGupta.jpeg" alt="Surbhi Gupta" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                      </div>
-                      <div class="speaker-info">
-                          <div class="speaker-name">Surbhi Gupta</div>
-                          <p class="speaker-bio">Director of Engineering - Pattern</p>
-                      </div>
-                  </a>
-              </div>
-              <div class="col-md-6 mb-4">
-                  <a href="https://www.linkedin.com/in/pagnis/" class="speaker-card d-flex align-items-center" target="_blank">
-                      <div class="speaker-photo me-3">
-                          <img src="images/speakers/swanand-pagnis.png" alt="Swanand Pagnis" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                      </div>
-                      <div class="speaker-info">
-                          <div class="speaker-name">Swanand Pagnis</div>
-                          <p class="speaker-bio">Co-founder and CEO of Superlinear.</p>
-                      </div>
-                  </a>
-              </div>
-              <div class="col-md-6 mb-4">
-                  <a href="https://www.linkedin.com/in/siddharth-sharma-7941a611/" class="speaker-card d-flex align-items-center" target="_blank">
-                      <div class="speaker-photo me-3">
-                          <img src="images/speakers/svs.png" alt="Shailesh Patil" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                      </div>
-                      <div class="speaker-info">
-                          <div class="speaker-name">Siddharth Sharma</div>
-                          <p class="speaker-bio">Software Engineering Leader</p>
-                      </div>
-                  </a>
-              </div>
-          </div>
-          
-          </div>
-      </section>
-      <!-- Section Photo Gallery-->
-      <!-- <section
+            </section>
+            <section class="section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled d-none">
+                <div class="container">
+                    <h6>
+                        <a id="speakers">Our Speakers</a>
+                    </h6>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://www.linkedin.com/in/anush-kumar-s/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Solid Queue - Default Active Job Adaptor in Rails 8</div>
+                                        <div class="speaker-abstract">
+                                            Struggling with Sidekiq config or performance issues with delayed_jobs? Join our talk on "Solid Queue," a new Active Job adapter that boosts background job performance and simplifies setup. It will soon be the default in Rails 8!
+                                        </div>
+                                    </div>
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/AnushKumar.JPG"
+                                                alt="Anush Kumar"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Anush Kumar (AK)</div>
+                                        <div class="speaker-bio">Software Engineer at Rently</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://www.linkedin.com/in/ashishtendulkar/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Power of Gemini and How Developers can Harness it</div>
+                                        <div class="speaker-abstract"></div>
+                                    </div>
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/AshishTendulkar.jpeg"
+                                                alt="Anush Kumar"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Ashish Tendulkar</div>
+                                        <div class="speaker-bio">AI/ML Leader at Google</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://www.linkedin.com/in/chaitalikhangar/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Metaprogramming: Unraveling the Magic</div>
+                                        <div class="speaker-abstract">
+                                            Discover Ruby metaprogramming! Learn powerful techniques to make your code dynamic and adaptable while avoiding added complexity. Join us to master the art of clean, flexible Ruby!
+                                        </div>
+                                    </div>
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/chaitaliK.jpg"
+                                                alt="Chaitali Khangar"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Chaitali Khangar</div>
+                                        <div class="speaker-bio">Technical Architect at Sedin Technologies - RailsFactory</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://keshavbiswa.com" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">From Curiosity to Confusion: My Journey of Creating Confuscript in Ruby</div>
+                                        <div class="speaker-abstract">
+                                            Discover this unique language designed to challenge conventional coding logic, exploring its syntax, quirks, and the playful philosophy behind it. Perfect for those curious about unconventional programming perspectives—join us to unravel the confusion!
+                                        </div>
+                                    </div>
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/KeshavBiswa.jpg"
+                                                alt="Keshav Biswa"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Keshav Biswa</div>
+                                        <div class="speaker-bio">Senior Software Engineer at Saeloun</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://manu-j.com/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Puma, Falcon, Pitchfork: Navigating the Ruby Web Server Landscape</div>
+                                        <div class="speaker-abstract">
+                                            Puma's Ruby server dominance is being challenged by Falcon's fiber-based concurrency and Pitchfork's memory efficiency. This talk aims to explore these choices and guide you to select the most suitable server for your unique application needs.
+                                        </div>
+                                    </div>
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/ManuJ.jpg"
+                                                alt="Manu Janardhanan"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Manu Janardhanan</div>
+                                        <div class="speaker-bio">Engineering Lead at Lodgistics</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://www.linkedin.com/in/puneet-khushwani-01012726/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Understanding Garbage Collection in Ruby</div>
+                                        <div class="speaker-abstract">
+                                            Unlike languages like C, Ruby's automatic garbage collection frees us from manual memory management worries. Discover how it works behind the scenes. Also discover how misconfigured GC can harm performance.
+                                        </div>
+                                    </div>
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/PuneetKhushwani.png"
+                                                alt="Puneet Khushwani"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Puneet Khushwani</div>
+                                        <div class="speaker-bio">Sr. Engineering Manager at Coupa Software</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://x.com/rtdp" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Reading Ruby - a visual walkthrough of the source code</div>
+                                        <div class="speaker-abstract">
+                                            Curious about Ruby's internals but want to avoid diving deep into C? Interested in contributing to Ruby and need a primer before tackling the code? This talk covers both, simplifying the complexity with visuals, diagrams, and a touch of C.
+                                        </div>
+                                    </div>
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/RatnadeepDeshmane.JPG"
+                                                alt="Ratnadeep Deshmane"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Ratnadeep Deshmane</div>
+                                        <div class="speaker-bio">Founder at BetaCraft Technologies</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://www.linkedin.com/in/rohit-mukherjee-863b322b/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Ruby Mediator</div>
+                                        <div class="speaker-abstract">
+                                            The mediator design pattern in Ruby is a behavioral pattern that reduces coupling between program components. It does this by allowing components to communicate indirectly through a mediator object instead of directly.
+                                        </div>
+                                    </div>
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/RohitMukherjee.jpg"
+                                                alt="Rohit Mukherjee"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Rohit Mukherjee</div>
+                                        <div class="speaker-bio">Technical Lead at Rently</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://www.linkedin.com/in/sonal-sachdev13/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">If You Can Whisk, You Can Code</div>
+                                        <div class="speaker-abstract">
+                                            This talk will debunk common coding myths and showcase the essential tools for success, proving that, like Remy the rat, creativity and confidence are all you need. Get ready to whisk your way into coding!
+                                        </div>
+                                    </div>
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/SonalSachdev.jpeg"
+                                                alt="Sonal Sachdev"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Sonal Sachdev</div>
+                                        <div class="speaker-bio">Software Engineer at Josh Software</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://srira.me/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Taming Flaky Specs: Diagnosing Test Failures in Ruby</div>
+                                        <div class="speaker-abstract">
+                                            Flaky specs can cause random test failures, disrupting CI pipelines and eroding confidence in your test suite. In this talk, we'll explore common root causes of flaky specs and dive into strategies for diagnosing rare, hard-to-reproduce issues to help stabilize your test suite.
+                                        </div>
+                                    </div>
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/Sriram V.jpg"
+                                                alt="Sriram V"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Sriram V</div>
+                                        <div class="speaker-bio">Associate RoR Developer at Rently</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://www.linkedin.com/in/sumit-dey-035/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Rails Upgrade Mastery: Best Practices for Large-Scale Enterprise Applications</div>
+                                        <div class="speaker-abstract">
+                                            Upgrading Rails in an enterprise software? Learn from Coupa's journey! This talk will share our challenges, strategies, and best practices based on our experience of upgrading from Rails 6 to 7.Take away valuable insights and practical tips for a seamless Rails upgrade at scale.
+                                        </div>
+                                    </div>
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/sumitDey.jpg"
+                                                alt="Sumit Dey"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Sumit Dey</div>
+                                        <div class="speaker-bio">Lead Software Engineer at Coupa</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://www.linkedin.com/in/vishwajeetsinghd/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">The Harvey Dent Dilemma: Ruby's White Knight Rises (or Falls)</div>
+                                        <div class="speaker-abstract">
+                                            Frozen strings, memoization, and Ruby's other quirky features can be your performance secret weapon, but misuse can lead to a performance nightmare. Let's dive into the rabbit hole of Ruby optimization and learn how to avoid the traps while writing code that's both fast and fun.
+                                        </div>
+                                    </div>
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/Vishwa.png"
+                                                alt="Vishwajeetsingh Desurkar"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Vishwajeetsingh Desurkar</div>
+                                        <div class="speaker-bio">Principal Engineer at SimplySmart Technologies</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="langroast" class="section section-lg bg-default text-center">
+                <div class="container">
+                    <h2 class="text-3xl font-bold mb-4">Language Roast</h2>
+                    <p class="mt-3">
+                        Welcome to the Language Roast at RubyConf India! Prepare for a fun-filled, spirited debate where programming languages take the spotlight.
+                        Passionate programmers will form camps to roast popular languages, pointing out their quirks, flaws, and unique characteristics with wit and humor.
+                        Whether you're rooting for Ruby, Python, JavaScript, or any other language, get ready for some lighthearted roasting and lots of laughs!
+                    </p>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="col-md-5">
+                                <a class="button button-primary roast-cfp-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScXpJvsbFT2dOFDAxHP4omUk7AEG_arWlRNI1RMcYNaiuFgZg/viewform?usp=dialog" data-triangle=".button-overlay" target="_blank">
+                                    <span>🔥 Roast Your Favorite Language: Submit Your CFP!</span>
+                                    <span class="button-overlay" style="border-top-width: 60.5px; border-left-width: 432.227px;"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <div class="row d-none">
+                        <div class="col-md-6 mb-4">
+                            <div class="speaker-card d-flex align-items-center">
+                                <div class="speaker-photo me-3">
+                                    <img src="images/speakers/DuttaDeshmukh.jpeg" alt="Datta Deshmukh" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover;">
+                                </div>
+                                <div class="speaker-info">
+                                    <div class="speaker-name">Datta Deshmukh</div>
+                                    <p class="speaker-bio">Senior Manager, Performance Engineering @Coupa</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="speaker-card d-flex align-items-center">
+                                <div class="speaker-photo me-3">
+                                    <img src="images/speakers/SurbhiGupta.jpeg" alt="Surbhi Gupta" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover;">
+                                </div>
+                                <div class="speaker-info">
+                                    <div class="speaker-name">Surbhi Gupta</div>
+                                    <p class="speaker-bio">Software Engineer @Josh Software</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="speaker-card d-flex align-items-center">
+                                <div class="speaker-photo me-3">
+                                    <img src="images/speakers/swanand-pagnis.png" alt="Swanand Pagnis" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover;">
+                                </div>
+                                <div class="speaker-info">
+                                    <div class="speaker-name">Swanand Pagnis</div>
+                                    <p class="speaker-bio">Senior Developer Advocate @Devto</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="speaker-card d-flex align-items-center">
+                                <div class="speaker-photo me-3">
+                                    <img src="images/speakers/svs.png" alt="SVS" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover;">
+                                </div>
+                                <div class="speaker-info">
+                                    <div class="speaker-name">SVS</div>
+                                    <p class="speaker-bio">Ruby Enthusiast @Ruby Community</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Section Photo Gallery-->
+            <!-- <section
         class="parallax-container section"
         data-parallax-img="images/bg-parallax-03-1894x1662.jpg"
       >
@@ -1189,130 +1121,111 @@
           </div>
         </div>
       </section> -->
-     
-      <!-- Section Official Sponsors-->
-      <section
-        class="parallax-container section"
-        data-parallax-img="images/bg-parallax-04-1894x1170.jpg"
-      >
-      <a id="official-sponsors"></a>
-        <div class="parallax-content section-lg context-dark text-center">
-          <div class="container">
-            <h3>Sponsorship</h3>
-        <a id="official-sponsors"></a>
-        <div class="parallax-content section-lg context-dark text-center">
-          <div class="container">
-            <h4>Platinum Sponsors</h4>
-            <br>
-            <br>
-              <div class="col">
-                <div class="wow">
-                  <div>
-                    <a
-                      class="sponsor"
-                      href="https://www.joshsoftware.com/"
-                      data-triangle=".sponsor-overlay"
-                      style="height: 110px; object-fit: contain"
-                      target="_blank"
-                      >
-                        <img
-                          src="images/company-logos/JOSH.png"
-                        />
-                    </a>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="container">
-            <h4>Gold Sponsors</h4>
-            <div class="row row-30 row-lg-50 justify-content-center">
-              <div class="col-md3" style="margin-right: 30px; margin-left: 30px">
-                <div class="wow">
-                  <div>
-                    <a
-                      class="sponsor"
-                      href="https://in.pattern.com/"
-                      data-triangle=".sponsor-overlay"
-                      target="_blank"
-                      style="height: 100px"
-                      >
-                      <div class="sponsor-img">
-                        <img
-                          src="images/company-logos/pattern-black.png"
-                          style="height: 100%; object-fit: contain"
-                        />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md3" style="margin-right: 30px; margin-left: 30px">
-                <div class="wow">
-                  <div>
-                    <a
-                      class="sponsor"
-                      href="https://www.coupa.com/"
-                      data-triangle=".sponsor-overlay"
-                      target="_blank"
-                      style="height: 100px"
-                      >
-                      <div class="sponsor-img">
-                        <img
-                          src="images/company-logos/CoupaSoftware.png"
-                          style="height: 100%; object-fit: contain"
-                        />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="container">
-            <h4>Silver Sponsors</h4>
-            <div class="row row-30 row-lg-50 justify-content-center">
-              <div class="col-md3" style="margin-right: 50px; margin-left: 50px">
-                <div class="wow">
-                  <div>
-                    <a
-                      class="sponsor"
-                      href="https://www.saeloun.com/"
-                      data-triangle=".sponsor-overlay"
-                      target="_blank"
-                      style="height: 75px; width: 220px; object-fit: contain"
-                      >
-                      <div class="sponsor-img">
-                        <img
-                          src="images/company-logos/saeloun.png"
-                          width= "80%"
-                        />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-                 <div class="col-md3" style="margin-right: 50px; margin-left: 50px">
-                <div class="wow">
-                  <div>
-                    <a
-                      class="sponsor"
-                      href="https://railsfactory.com/"
-                      data-triangle=".sponsor-overlay"
-                      target="_blank"
-                      style="height: 75px; width: 220px; object-fit: contain"
-                      >
-                      <div class="sponsor-img">
-                        <img
-                          src="images/company-logos/railsfactory-1.png"
-                          width= "160%"
-                        />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                 </div>
-                 <!--
+            <!-- Section Official Sponsors-->
+            <section class="parallax-container section d-none" data-parallax-img="images/bg-parallax-04-1894x1170.jpg">
+                <a id="official-sponsors"></a>
+                <div class="parallax-content section-lg context-dark text-center">
+                    <div class="container">
+                        <h3>Sponsorship</h3>
+                        <a id="official-sponsors"></a>
+                        <div class="parallax-content section-lg context-dark text-center">
+                            <div class="container">
+                                <h4>Platinum Sponsors</h4>
+                                <br>
+                                <br>
+                                <div class="col">
+                                    <div class="wow">
+                                        <div>
+                                            <a
+                                                class="sponsor"
+                                                href="https://www.joshsoftware.com/"
+                                                data-triangle=".sponsor-overlay"
+                                                style="height: 110px; object-fit: contain"
+                                                target="_blank"
+                                            >
+                                                <img src="images/company-logos/JOSH.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <h4>Gold Sponsors</h4>
+                                <div class="row row-30 row-lg-50 justify-content-center">
+                                    <div class="col-md3" style="margin-right: 30px; margin-left: 30px">
+                                        <div class="wow">
+                                            <div>
+                                                <a
+                                                    class="sponsor"
+                                                    href="https://in.pattern.com/"
+                                                    data-triangle=".sponsor-overlay"
+                                                    target="_blank"
+                                                    style="height: 100px"
+                                                >
+                                                    <div class="sponsor-img">
+                                                        <img src="images/company-logos/pattern-black.png" style="height: 100%; object-fit: contain">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md3" style="margin-right: 30px; margin-left: 30px">
+                                        <div class="wow">
+                                            <div>
+                                                <a
+                                                    class="sponsor"
+                                                    href="https://www.coupa.com/"
+                                                    data-triangle=".sponsor-overlay"
+                                                    target="_blank"
+                                                    style="height: 100px"
+                                                >
+                                                    <div class="sponsor-img">
+                                                        <img src="images/company-logos/CoupaSoftware.png" style="height: 100%; object-fit: contain">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <h4>Silver Sponsors</h4>
+                                <div class="row row-30 row-lg-50 justify-content-center">
+                                    <div class="col-md3" style="margin-right: 50px; margin-left: 50px">
+                                        <div class="wow">
+                                            <div>
+                                                <a
+                                                    class="sponsor"
+                                                    href="https://www.saeloun.com/"
+                                                    data-triangle=".sponsor-overlay"
+                                                    target="_blank"
+                                                    style="height: 75px; width: 220px; object-fit: contain"
+                                                >
+                                                    <div class="sponsor-img">
+                                                        <img src="images/company-logos/saeloun.png" width="80%">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md3" style="margin-right: 50px; margin-left: 50px">
+                                        <div class="wow">
+                                            <div>
+                                                <a
+                                                    class="sponsor"
+                                                    href="https://railsfactory.com/"
+                                                    data-triangle=".sponsor-overlay"
+                                                    target="_blank"
+                                                    style="height: 75px; width: 220px; object-fit: contain"
+                                                >
+                                                    <div class="sponsor-img">
+                                                        <img src="images/company-logos/railsfactory-1.png" width="160%">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--
                  <div class="col-md3" style="margin-right: 50px; margin-left: 50px">
                 <div class="wow">
                   <div>
@@ -1334,10 +1247,10 @@
                 </div>
               </div>
             -->
-              </div>
-              <br> 
-              <br>
-              <!--
+                                </div>
+                                <br>
+                                <br>
+                                <!--
              <div class="container">
             <h3>Bronze Sponsors</h3>
             <div class="row row-30 row-lg-50 justify-content-center">
@@ -1362,350 +1275,362 @@
                 </div>
               </div>
             -->
-
-              <!-- <div class="divider divider-white text-center mb-5"></div> -->
-
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6" style="margin-top: 10px">
-                <div class="block-lg block-center">
-                  <a
-                    class="button button-lg button-primary button-offset-xl"
-                    href="mailto:gautam@rubyconfindia.org?cc=seema@rubyconfindia.org"
-                    data-triangle=".button-overlay"
-                  >
-                    <span>Be a proud sponsor</span>
-                    <span
-                      class="button-overlay"
-                      style="border-top-width: 78.5px; border-left-width: 221.65px;"></span>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-md-6" style="margin-top: 10px">
-                <div class="block-lg block-center">
-                  <a
-                    class="button button-lg button-primary button-offset-xl"
-                    href="rci2024.pdf"
-                    data-triangle=".button-overlay"
-                  >
-                    <span>SPONSORSHIP PROSPECTUS</span>
-                    <span
-                      class="button-overlay"
-                      style="border-top-width: 78.5px; border-left-width: 221.65px;"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="location" class="section section-lg bg-secondary-900 text-light py-5">
-        <div class="container">
-          <!-- Location Heading -->
-          <div class="text-center mb-5">
-            <h6 class="text-uppercase fw-bold">Location</h6>
-            <p>
-              Join us for <strong>RubyConf India 2024</strong> at
-              <a href="https://www.hotelclarks.com/amer-jaipur/" target="_blank" class="text-decoration-none text-light">Hotel Clarks Amer, Jaipur</a>. This residential conference includes both event access and accommodation at the venue for a seamless experience.
-            </p>
-          </div>
-      
-          <!-- Location Image -->
-          <div class="location-image mb-5 text-center">
-            <img src="images/venue.jpg" alt="Hotel Clarks Amer, Jaipur" class="img-fluid rounded shadow">
-          </div>
-      
-      
-          <!-- Accommodation Section -->
-          <div class="my-5">
-            <h4 class="text-uppercase fw-bold mb-4">Accommodation</h4>
-            <p>Each ticket includes accommodation at the venue:</p>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item border-0"><strong>Check-In: 28th November, 2:00 PM </strong></li>
-              <li class="list-group-item border-0"><strong>Check-Out: 30th November, 10:00 AM </strong></li>
-            </ul>
-            <p>To extend your stay, please contact <a href="https://www.hotelclarks.com/amer-jaipur/" target="_blank" class="text-decoration-none text-light">Hotel Clarks Amer</a> directly.</p>
-          </div>
-      
-          <!-- Getting to Jaipur Section -->
-          <div class="my-5">
-            <h4 class="text-uppercase fw-bold mb-4">Getting to Jaipur</h4>
-            <div class="mb-3">
-              <h6 class="fw-bold">By Air:</h6>
-              <p>Jaipur International Airport (JAI) is approximately 4 km from the hotel, with taxis and ride-sharing options like <span class="fw-bold">Uber</span> and <span class="fw-bold">Ola</span> readily available. Travel time is around 15-20 minutes.</p>
-            </div>
-            <div class="mb-3">
-              <h6 class="fw-bold">By Train:</h6>
-              <p>Jaipur Junction Railway Station, about 10 km from the hotel, connects Jaipur with major cities. Taxis and auto-rickshaws are available, with a 30-minute drive to the hotel.</p>
-            </div>
-            <div class="mb-3">
-              <h6 class="fw-bold">By Road:</h6>
-              <p>Jaipur is accessible via <span class="fw-bold">NH8 from Delhi</span> (about 5 hours) and <span class="fw-bold">NH21 from Agra</span> (about 4 hours).</p>
-            </div>
-          </div>
-      
-          <!-- Passports and Visas Section -->
-          <div class="my-5">
-            <h4 class="text-uppercase fw-bold mb-4">Passports and Visas</h4>
-            <p><strong>International Visitors:</strong> Most international attendees require a visa to enter India. Visitors from several countries may be eligible for an e-visa. For details and to apply online, please visit the <a href="https://indianvisaonline.gov.in/evisa/tvoa.html" target="_blank" class="text-decoration-none text-light">Indian e-Visa Portal</a>.</p>
-            <p><strong>Documents Required:</strong> Ensure you carry a valid passport (with at least six months validity) and other identification documents while traveling.</p>
-          </div>
-      
-          <!-- Venue and City Information Section -->
-          <div class="my-5">
-            <h4 class="text-uppercase fw-bold mb-4">Venue and City Information</h4>
-            
-            <div class="mb-4">
-                <h5 class="fw-bold mb-3">Hotel Clarks Amer</h5>
-                <p>Hotel Clarks Amer offers luxurious accommodation and conference facilities, including dining options, a rooftop restaurant, WiFi, a fitness center, a spa, and a pool. Attendees staying here can easily access the conference venue without additional travel arrangements.</p>
-            </div>
-              
-              <div class="mb-4">
-                  <h5 class="fw-bold mb-3">The City of Jaipur</h5>
-                  <p>Jaipur, also known as the "Pink City," is the capital of Rajasthan. Famous for its vibrant culture and stunning architecture, Jaipur combines ancient charm with modern amenities. Popular landmarks include:</p>
-                  
-                  <div class="row g-4">
-                      <div class="col-md-3">
-                          <div class="position-relative image-container rounded shadow">
-                              <a href="https://en.wikipedia.org/wiki/Amber_Fort" target="_blank" class="text-decoration-none">
-                                  <img src="images/amberFort.jpg" alt="Amber Fort" class="landmark-image rounded" />
-                                  <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-opacity-75">
-                                      <h6 class="mb-0">Amber Fort</h6>
-                                  </div>
-                              </a>
-                          </div>
-                      </div>
-                      
-                      <div class="col-md-3">
-                          <div class="position-relative image-container rounded shadow">
-                              <a href="https://en.wikipedia.org/wiki/City_Palace,_Jaipur" target="_blank" class="text-decoration-none">
-                                  <img src="images/cityPalacejaipur.jpg" alt="City Palace" class="landmark-image rounded" />
-                                  <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-dark bg-opacity-75">
-                                      <h6 class="mb-0">City Palace</h6>
-                                  </div>
-                              </a>
-                          </div>
-                      </div>
-                      
-                      <div class="col-md-3">
-                          <div class="position-relative image-container rounded shadow">
-                              <a href="https://en.wikipedia.org/wiki/Hawa_Mahal" target="_blank" class="text-decoration-none">
-                                  <img src="images/hawaMahalJaipur.jpg" alt="Hawa Mahal" class="landmark-image rounded" />
-                                  <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-dark bg-opacity-75">
-                                      <h6 class="mb-0">Hawa Mahal</h6>
-                                  </div>
-                              </a>
-                          </div>
-                      </div>
-                      
-                      <div class="col-md-3">
-                          <div class="position-relative image-container rounded shadow">
-                              <a href="https://en.wikipedia.org/wiki/Jantar_Mantar,_Jaipur" target="_blank" class="text-decoration-none">
-                                  <img src="images/JantarMantarJaipur.jpg" alt="Jantar Mantar" class="landmark-image rounded" />
-                                  <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-dark bg-opacity-75">
-                                      <h6 class="mb-0">Jantar Mantar</h6>
-                                  </div>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-                  
-                  <p class="mt-4">Jaipur is also known for its handicrafts, jewelry, and textiles, making it an excellent place for shopping.</p>
-              </div>
-          </div>      
-      
-          <!-- Safety Tips Section -->
-          <div class="my-5">
-            <h5 class="fw-bold">Safety Tips</h5>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item border-0">Stay alert and secure your belongings in crowded areas.</li>
-              <li class="list-group-item border-0">Use registered taxis, hotel shuttles, or ride-sharing apps like Uber or Ola for transportation.</li>
-              <li class="list-group-item border-0">Save emergency contact numbers (112) and embassy details.</li>
-            </ul>
-          </div>
-      
-          <!-- Essential Information Section -->
-          <div class="my-5">
-            <h5 class="fw-bold mb-4">Essential Information</h5>
-            <div class="mb-3">
-              <h6 class="fw-bold">Money</h6>
-              <p>The currency in India is the Indian Rupee (₹). Major credit and debit cards are accepted in hotels, restaurants, and shops. ATMs are widely available in Jaipur, and currency exchange can be done at the airport or banks.</p>
-            </div>
-            <div class="mb-3">
-              <h6 class="fw-bold">Internet Access</h6>
-              <p>WiFi is available at the hotel and conference venue. Many cafes and restaurants in Jaipur also offer free WiFi. For mobile internet, purchase a prepaid SIM card at the airport or nearby mobile stores. Airtel, Jio, and Vodafone Idea offer affordable prepaid plans with good coverage.</p>
-            </div>
-            <div class="mb-3">
-              <h6 class="fw-bold">Local Transportation</h6>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item border-0">Auto-rickshaws – Negotiable rates, ideal for short trips.</li>
-                <li class="list-group-item border-0">Buses – Jaipur City Transport Services operates city buses. Use Google Maps for public transit routes.</li>
-                <li class="list-group-item border-0">Taxis and Ride-Sharing Apps – Uber and Ola are widely available and convenient.</li>
-              </ul>
-            </div>
-          </div>
-      
-          <!-- Dining & Local Cuisine Section -->
-          <div class="my-5">
-            <h5 class="fw-bold mb-4">Dining & Local Cuisine</h5>
-            <p>Jaipur is known for its rich culinary heritage. Must-try dishes include dal baati churma, laal maas, and ghevar. Here are a few popular dining spots:</p>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item border-0"><strong><a href="https://www.chokhidhani.com/" target="_blank" class="text-decoration-none text-light">Chokhi Dhani</a></strong> – A cultural village resort offering traditional Rajasthani cuisine.</li>
-              <li class="list-group-item border-0"><strong><a href="https://www.handirestaurantjaipur.com/" target="_blank" class="text-decoration-none text-light">Handi Restaurant</a></strong> – Known for flavorful curries and tandoori dishes.</li>
-              <li class="list-group-item border-0"><strong><a href="http://www.lmbjaipur.com/" target="_blank" class="text-decoration-none text-light">Laxmi Mishthan Bhandar (LMB)</a></strong> – Famous for sweets and vegetarian Rajasthani food.</li>
-            </ul>
-          </div>
-      
-          <!-- Things to Do in Jaipur Section -->
-          <div class="my-5">
-            <h5 class="fw-bold mb-4">Things to Do in Jaipur</h5>
-            <p>Beyond the conference, Jaipur offers plenty to explore:</p>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item border-0">Visit the Amber Fort – One of the most majestic forts in India.</li>
-              <li class="list-group-item border-0">Explore the City Palace – A stunning blend of Mughal and Rajput architecture.</li>
-              <li class="list-group-item border-0">Shop at Johari Bazaar and Bapu Bazaar – Famous for jewelry, textiles, and handicrafts.</li>
-              <li class="list-group-item border-0">Attend a cultural show – Enjoy Rajasthani dance and music performances.</li>
-            </ul>
-          </div>
-          </div>
-      </section>
-      
-    
-
-      <!-- Section Pre Footer-->
-      <section class="section section-lg bg-gray-900">
-        <div class="container">
-          <div class="row row-30">
-            <!-- Logo Section -->
-            <div class="col-xs-10 col-lg-4 align-self-center">
-              <a class="brand" href="index.html">
-                <img class="brand-logo-light" src="images/ruby-conf-india-logo.webp" alt="RubyConf India Logo" />
-              </a>
-            </div>
-            
-            <!-- Event Details Section -->
-            <div class="col-xs-10 col-sm-6 col-lg-4 align-self-center">
-              <h5><span class="big font-weight-sbold">Event Details</span></h5>
-              <div class="event-detail">
-                <p class="event-detail-time big">
-                  <time data-splitting datetime="2024-11-29">29th - 30th Nov, 2024</time>
-                </p>
-                <p class="event-detail-address big" data-splitting>
-                  Hotel Clarks Amer<br />
-                  Jawahar Lal Nehru Marg,<br />
-                  Opposite Fortis Escorts Hospital,<br />
-                  Jaipur, Rajasthan 302018
-                </p>
-                <p class="event-detail-time">
-                  <strong>Event Timing:</strong> 10:00 AM - 6:00 PM
-                </p>
-                <a class="event-detail-link" href="https://maps.app.goo.gl/wtbamHXfeau1KH9Y9" target="_blank">View map location</a>
-              </div>
-            </div>
-        
-            <!-- Social Updates Section -->
-            <div class="col-xs-10 col-sm-6 col-lg-4 align-self-center">
-              <h5><span class="big font-weight-sbold">Social Updates</span></h5>
-              <div class="event-detail">
-                <p class="big">
-                  Join the conversation and stay updated with the latest event highlights.<br class="d-none d-xl-block" />
-                  Follow us on social media:
-                </p>
-                <ul class="list-inline list-inline-xs">
-                  <li data-wow-delay=".35s">
-                    <a
-                      class="icon icon-rect icon-xs icon-white fa-twitter"
-                      href="https://twitter.com/rubyconfindia"
-                      target="_blank"
-                      data-triangle=".icon-rect-overlay"
-                    ><div class="icon-rect-overlay"></div></a>
-                  </li>
-                  <li data-wow-delay=".2s">
-                    <a
-                      class="icon icon-rect icon-xs icon-white fa-facebook"
-                      href="https://www.facebook.com/rubyconfindia"
-                      target="_blank"
-                      data-triangle=".icon-rect-overlay"
-                    ><div class="icon-rect-overlay"></div></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      
-
-      <!-- Divider-->
-      <div class="divider divider-gray-900 text-center"></div>
-
-      <!-- Footer Classic-->
-      <footer class="section footer-classic context-dark">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <p class="contact-details">
-                <h4>Contact</h4>
-                Send us email at
-                <a href="mailto:team@rubyconfindia.org" target="_blank">team@rubyconfindia.org</a>
-                or contact
-                <a href="https://twitter.com/rubyconfindia" target="_blank">@RubyConfIndia</a>
-                over twitter
-              </p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <span>Copyright&nbsp;</span>
-              <span>&copy;&nbsp;</span>
-              <span class="copyright-year"></span>
-              <span>,&nbsp;</span>
-              <a href="https://rubycon.in/">RubyConf.in</a>
-              &nbsp;- All Rights Reserved.
-            </div>
-
-            <div class="col-md-6">
-              <span class="copyright text-muted small">Conference Organized by</span>
-              <img src="images/emerging-logo.png" alt="Emerging Technology Trust">
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-
-    <div class="snackbars" id="form-output-global"></div>
-
-    <div class="block-with-svg-gradients">
-      <svg xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <lineargradient
-            id="svg-gradient-primary"
-            x1="0%"
-            y1="100%"
-            x2="100%"
-            y2="0%"
-          >
-            <stop
-              offset="0%"
-              style="stop-color:rgb(130,46,168);stop-opacity:1"
-            ></stop>
-            <stop
-              offset="100%"
-              style="stop-color:rgb(217,14,144);stop-opacity:1"
-            ></stop>
-          </lineargradient>
-        </defs>
-      </svg>
-    </div>
-
-    <script defer src="js/core.min.js"></script>
-    <script defer src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
-</html>
+                                <!-- <div class="divider divider-white text-center mb-5"></div> -->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6" style="margin-top: 10px">
+                                            <div class="block-lg block-center">
+                                                <a class="button button-lg button-primary button-offset-xl" href="mailto:gautam@rubyconfindia.org?cc=seema@rubyconfindia.org" data-triangle=".button-overlay">
+                                                    <span>Be a proud sponsor</span>
+                                                    <span class="button-overlay" style="border-top-width: 78.5px; border-left-width: 221.65px;"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" style="margin-top: 10px">
+                                            <div class="block-lg block-center">
+                                                <a class="button button-lg button-primary button-offset-xl" href="rci2024.pdf" data-triangle=".button-overlay">
+                                                    <span>SPONSORSHIP PROSPECTUS</span>
+                                                    <span class="button-overlay" style="border-top-width: 78.5px; border-left-width: 221.65px;"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="location" class="section section-lg bg-secondary-900 text-light py-5">
+                            <div class="container">
+                                <!-- Location Heading -->
+                                <div class="text-center mb-5">
+                                    <h6 class="text-uppercase fw-bold">Location</h6>
+                                    <p>
+                                        Join us for
+                                        <strong>RubyConf India 2024</strong>
+                                        at
+                                        <a href="https://www.hotelclarks.com/amer-jaipur/" target="_blank" class="text-decoration-none text-light">Hotel Clarks Amer, Jaipur</a>
+                                        . This residential conference includes both event access and accommodation at the venue for a seamless experience.
+                                    </p>
+                                </div>
+                                <!-- Location Image -->
+                                <div class="location-image mb-5 text-center">
+                                    <img src="images/venue.jpg" alt="Hotel Clarks Amer, Jaipur" class="img-fluid rounded shadow">
+                                </div>
+                                <!-- Accommodation Section -->
+                                <div class="my-5">
+                                    <h4 class="text-uppercase fw-bold mb-4">Accommodation</h4>
+                                    <p>Each ticket includes accommodation at the venue:</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item border-0">
+                                            <strong>Check-In: 12th September, 2:00 PM</strong>
+                                        </li>
+                                        <li class="list-group-item border-0">
+                                            <strong>Check-Out: 13th September, 10:00 AM</strong>
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        To extend your stay, please contact
+                                        <a href="https://www.hotelclarks.com/amer-jaipur/" target="_blank" class="text-decoration-none text-light">Hotel Clarks Amer</a>
+                                        directly.
+                                    </p>
+                                </div>
+                                <!-- Getting to Jaipur Section -->
+                                <div class="my-5">
+                                    <h4 class="text-uppercase fw-bold mb-4">Getting to Jaipur</h4>
+                                    <div class="mb-3">
+                                        <h6 class="fw-bold">By Air:</h6>
+                                        <p>
+                                            Jaipur International Airport (JAI) is approximately 4 km from the hotel, with taxis and ride-sharing options like
+                                            <span class="fw-bold">Uber</span>
+                                            and
+                                            <span class="fw-bold">Ola</span>
+                                            readily available. Travel time is around 15-20 minutes.
+                                        </p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h6 class="fw-bold">By Train:</h6>
+                                        <p>Jaipur Junction Railway Station, about 10 km from the hotel, connects Jaipur with major cities. Taxis and auto-rickshaws are available, with a 30-minute drive to the hotel.</p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h6 class="fw-bold">By Road:</h6>
+                                        <p>
+                                            Jaipur is accessible via
+                                            <span class="fw-bold">NH8 from Delhi</span>
+                                            (about 5 hours) and
+                                            <span class="fw-bold">NH21 from Agra</span>
+                                            (about 4 hours).
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Passports and Visas Section -->
+                                <div class="my-5">
+                                    <h4 class="text-uppercase fw-bold mb-4">Passports and Visas</h4>
+                                    <p>
+                                        <strong class="color-black">International Visitors:</strong>
+                                        Most international attendees require a visa to enter India. Visitors from several countries may be eligible for an e-visa. For details and to apply online, please visit the
+                                        <a href="https://indianvisaonline.gov.in/evisa/tvoa.html" target="_blank" class="text-decoration-none text-light">Indian e-Visa Portal</a>
+                                        .
+                                    </p>
+                                    <p>
+                                        <strong class="color-black">Documents Required:</strong>
+                                        Ensure you carry a valid passport (with at least six months validity) and other identification documents while traveling.
+                                    </p>
+                                </div>
+                                <!-- Venue and City Information Section -->
+                                <div class="my-5">
+                                    <h4 class="text-uppercase fw-bold mb-4">Venue and City Information</h4>
+                                    <div class="mb-4">
+                                        <h5 class="fw-bold mb-3">Hotel Clarks Amer</h5>
+                                        <p>Hotel Clarks Amer offers luxurious accommodation and conference facilities, including dining options, a rooftop restaurant, WiFi, a fitness center, a spa, and a pool. Attendees staying here can easily access the conference venue without additional travel arrangements.</p>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h5 class="fw-bold mb-3">The City of Jaipur</h5>
+                                        <p>Jaipur, also known as the "Pink City," is the capital of Rajasthan. Famous for its vibrant culture and stunning architecture, Jaipur combines ancient charm with modern amenities. Popular landmarks include:</p>
+                                        <div class="row g-4">
+                                            <div class="col-md-3">
+                                                <div class="position-relative image-container rounded shadow">
+                                                    <a href="https://en.wikipedia.org/wiki/Amber_Fort" target="_blank" class="text-decoration-none">
+                                                        <img src="images/amberFort.jpg" alt="Amber Fort" class="landmark-image rounded">
+                                                        <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-opacity-75">
+                                                            <h6 class="mb-0">Amber Fort</h6>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="position-relative image-container rounded shadow">
+                                                    <a href="https://en.wikipedia.org/wiki/City_Palace,_Jaipur" target="_blank" class="text-decoration-none">
+                                                        <img src="images/cityPalacejaipur.jpg" alt="City Palace" class="landmark-image rounded">
+                                                        <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-dark bg-opacity-75">
+                                                            <h6 class="mb-0">City Palace</h6>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="position-relative image-container rounded shadow">
+                                                    <a href="https://en.wikipedia.org/wiki/Hawa_Mahal" target="_blank" class="text-decoration-none">
+                                                        <img src="images/hawaMahalJaipur.jpg" alt="Hawa Mahal" class="landmark-image rounded">
+                                                        <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-dark bg-opacity-75">
+                                                            <h6 class="mb-0">Hawa Mahal</h6>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="position-relative image-container rounded shadow">
+                                                    <a href="https://en.wikipedia.org/wiki/Jantar_Mantar,_Jaipur" target="_blank" class="text-decoration-none">
+                                                        <img src="images/JantarMantarJaipur.jpg" alt="Jantar Mantar" class="landmark-image rounded">
+                                                        <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-dark bg-opacity-75">
+                                                            <h6 class="mb-0">Jantar Mantar</h6>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="mt-4">Jaipur is also known for its handicrafts, jewelry, and textiles, making it an excellent place for shopping.</p>
+                                    </div>
+                                </div>
+                                <!-- Safety Tips Section -->
+                                <div class="my-5">
+                                    <h5 class="fw-bold">Safety Tips</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item border-0">Stay alert and secure your belongings in crowded areas.</li>
+                                        <li class="list-group-item border-0">Use registered taxis, hotel shuttles, or ride-sharing apps like Uber or Ola for transportation.</li>
+                                        <li class="list-group-item border-0">Save emergency contact numbers (112) and embassy details.</li>
+                                    </ul>
+                                </div>
+                                <!-- Essential Information Section -->
+                                <div class="my-5">
+                                    <h5 class="fw-bold mb-4">Essential Information</h5>
+                                    <div class="mb-3">
+                                        <h6 class="fw-bold">Money</h6>
+                                        <p>The currency in India is the Indian Rupee (₹). Major credit and debit cards are accepted in hotels, restaurants, and shops. ATMs are widely available in Jaipur, and currency exchange can be done at the airport or banks.</p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h6 class="fw-bold">Internet Access</h6>
+                                        <p>WiFi is available at the hotel and conference venue. Many cafes and restaurants in Jaipur also offer free WiFi. For mobile internet, purchase a prepaid SIM card at the airport or nearby mobile stores. Airtel, Jio, and Vodafone Idea offer affordable prepaid plans with good coverage.</p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h6 class="fw-bold">Local Transportation</h6>
+                                        <ul class="list-group list-group-flush transport-list">
+                                            <li class="list-group-item border-0 d-flex align-items-center">
+                                                <p>🚕  <span class="ms-2"> Auto-rickshaws – Negotiable rates, ideal for short trips.</span></p>
+                                            </li>
+                                            <li class="list-group-item border-0 d-flex align-items-center">
+                                                <p> 🚌 <span class="ms-2"> Buses – Jaipur City Transport Services operates city buses. Use Google Maps for public transit routes.</span></p>
+                                            </li>
+                                            <li class="list-group-item border-0 d-flex align-items-center">
+                                                <p> 🚗 <span class="ms-2"> Taxis and Ride-Sharing Apps – Uber and Ola are widely available and convenient.</span></li></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Dining & Local Cuisine Section -->
+                                <div class="my-5">
+                                    <h5 class="fw-bold mb-4">Dining & Local Cuisine</h5>
+                                    <p>Jaipur is known for its rich culinary heritage. Must-try dishes include dal baati churma, laal maas, and ghevar. Here are a few popular dining spots:</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item border-0">
+                                            <strong>
+                                                <a href="https://www.chokhidhani.com/" target="_blank" class="text-decoration-none text-light">Chokhi Dhani</a>
+                                            </strong>
+                                            – A cultural village resort offering traditional Rajasthani cuisine.
+                                        </li>
+                                        <li class="list-group-item border-0">
+                                            <strong>
+                                                <a href="https://www.handirestaurantjaipur.com/" target="_blank" class="text-decoration-none text-light">Handi Restaurant</a>
+                                            </strong>
+                                            – Known for flavorful curries and tandoori dishes.
+                                        </li>
+                                        <li class="list-group-item border-0">
+                                            <strong>
+                                                <a href="http://www.lmbjaipur.com/" target="_blank" class="text-decoration-none text-light">Laxmi Mishthan Bhandar (LMB)</a>
+                                            </strong>
+                                            – Famous for sweets and vegetarian Rajasthani food.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Things to Do in Jaipur Section -->
+                                <div class="my-5">
+                                    <h5 class="fw-bold mb-4">Things to Do in Jaipur</h5>
+                                    <p>Beyond the conference, Jaipur offers plenty to explore:</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item border-0">Visit the Amber Fort – One of the most majestic forts in India.</li>
+                                        <li class="list-group-item border-0">Explore the City Palace – A stunning blend of Mughal and Rajput architecture.</li>
+                                        <li class="list-group-item border-0">Shop at Johari Bazaar and Bapu Bazaar – Famous for jewelry, textiles, and handicrafts.</li>
+                                        <li class="list-group-item border-0">Attend a cultural show – Enjoy Rajasthani dance and music performances.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Section Pre Footer-->
+                        <section class="section section-lg bg-gray-900">
+                            <div class="container">
+                                <div class="row row-30">
+                                    <!-- Logo Section -->
+                                    <div class="col-xs-10 col-lg-4 align-self-center">
+                                        <a class="brand" href="index.html">
+                                            <img class="brand-logo-light" src="images/ruby-conf-india-logo.webp" alt="RubyConf India Logo">
+                                        </a>
+                                    </div>
+                                    <!-- Event Details Section -->
+                                    <div class="col-xs-10 col-sm-6 col-lg-4 align-self-center">
+                                        <h5>
+                                            <span class="big font-weight-sbold">Event Details</span>
+                                        </h5>
+                                        <div class="event-detail">
+                                            <p class="event-detail-time big">
+                                                <time data-splitting datetime="2025-09-12">12th - 13th Sep, 2025</time>
+                                            </p>
+                                            <p class="event-detail-address big" data-splitting>
+                                                Hotel Clarks Amer
+                                                <br>
+                                                Jawahar Lal Nehru Marg,
+                                                <br>
+                                                Opposite Fortis Escorts Hospital,
+                                                <br>
+                                                Jaipur, Rajasthan 302018
+                                            </p>
+                                            <p class="event-detail-time">
+                                                <strong>Event Timing:</strong>
+                                                10:00 AM - 6:00 PM
+                                            </p>
+                                            <a class="event-detail-link" href="https://maps.app.goo.gl/wtbamHXfeau1KH9Y9" target="_blank">View map location</a>
+                                        </div>
+                                    </div>
+                                    <!-- Social Updates Section -->
+                                    <div class="col-xs-10 col-sm-6 col-lg-4 align-self-center">
+                                        <h5>
+                                            <span class="big font-weight-sbold">Social Updates</span>
+                                        </h5>
+                                        <div class="event-detail">
+                                            <p class="big">
+                                                Join the conversation and stay updated with the latest event highlights.
+                                                <br class="d-none d-xl-block">
+                                                Follow us on social media:
+                                            </p>
+                                            <ul class="list-inline list-inline-xs">
+                                                <li data-wow-delay=".35s">
+                                                    <a
+                                                        class="icon icon-rect icon-xs icon-white fa-twitter"
+                                                        href="https://twitter.com/rubyconfindia"
+                                                        target="_blank"
+                                                        data-triangle=".icon-rect-overlay"
+                                                    >
+                                                        <div class="icon-rect-overlay"></div>
+                                                    </a>
+                                                </li>
+                                                <li data-wow-delay=".2s">
+                                                    <a
+                                                        class="icon icon-rect icon-xs icon-white fa-facebook"
+                                                        href="https://www.facebook.com/rubyconfindia"
+                                                        target="_blank"
+                                                        data-triangle=".icon-rect-overlay"
+                                                    >
+                                                        <div class="icon-rect-overlay"></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Divider-->
+                        <div class="divider divider-gray-900 text-center"></div>
+                        <!-- Footer Classic-->
+                        <footer class="section footer-classic context-dark">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="contact-details">
+                                            <h4>Contact</h4>
+                                            Send us email at
+                                            <a href="mailto:team@rubyconfindia.org" target="_blank">team@rubyconfindia.org</a>
+                                            or contact
+                                            <a href="https://twitter.com/rubyconfindia" target="_blank">@RubyConfIndia</a>
+                                            over twitter
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <span>Copyright&nbsp;</span>
+                                        <span>&copy;&nbsp;</span>
+                                        <span class="copyright-year"></span>
+                                        <span>,&nbsp;</span>
+                                        <a href="https://rubycon.in/">RubyConf.in</a>
+                                        &nbsp;- All Rights Reserved.
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span class="copyright text-muted small">Conference Organized by</span>
+                                        <img src="images/emerging-logo.png" alt="Emerging Technology Trust">
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="snackbars" id="form-output-global"></div>
+                    <div class="block-with-svg-gradients">
+                        <svg xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <lineargradient
+                                    id="svg-gradient-primary"
+                                    x1="0%"
+                                    y1="100%"
+                                    x2="100%"
+                                    y2="0%"
+                                >
+                                    <stop offset="0%" style="stop-color:rgb(130,46,168);stop-opacity:1"></stop>
+                                    <stop offset="100%" style="stop-color:rgb(217,14,144);stop-opacity:1"></stop>
+                                </lineargradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <script defer src="js/core.min.js"></script>
+                    <script defer src="js/script.js"></script>
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                </body>
+            </html>
