@@ -201,7 +201,10 @@
   .perk{font-weight:600;font-size:.92rem;color:var(--ink);background:var(--cream);border-radius:999px;padding:8px 16px;border:1px solid rgba(164,19,60,.14)}
 
   /* ===== CFP ===== */
-  .cfp-wrap{background:linear-gradient(160deg,#231634,var(--night) 50%,#2c0a1c);color:#fff;text-align:center;position:relative;overflow:hidden}
+  #view-cfp{background:linear-gradient(160deg,#231634,var(--night) 50%,#2c0a1c)}
+  .cfp-wrap{background:linear-gradient(160deg,#231634,var(--night) 50%,#2c0a1c);color:#fff;text-align:center;position:relative;overflow:hidden;
+    min-height:100vh;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box}
+  .cfp-wrap > .wrap{width:100%}
   .cfp-wrap .jaali-bg{opacity:.3;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><g fill='none' stroke='%23F2D58C' stroke-width='1' opacity='0.3'><path d='M40 0 L80 40 L40 80 L0 40 Z'/><circle cx='40' cy='40' r='14'/></g></svg>");}
   .cfp-inner{position:relative;z-index:2;max-width:780px;margin:0 auto}
   .cfp-wrap .kicker{color:var(--gold-soft)}
