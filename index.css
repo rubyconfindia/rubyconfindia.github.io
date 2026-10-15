@@ -148,14 +148,14 @@
   .spk{position:relative;border-radius:20px;overflow:hidden;background:linear-gradient(180deg,#fff,var(--cream));
     border:1px solid rgba(164,19,60,.12);box-shadow:0 16px 40px -28px rgba(94,10,32,.55);transition:.25s}
   .spk:hover{transform:translateY(-6px);box-shadow:0 26px 50px -24px rgba(94,10,32,.55)}
-  .spk-avatar{height:150px;display:flex;align-items:center;justify-content:center;
-    background:radial-gradient(circle at 50% 30%,var(--rose),var(--ruby));position:relative}
-  .spk-avatar .initials{font-family:'Fraunces';font-weight:900;font-size:2.6rem;color:#fff}
-  .spk-avatar .ring{position:absolute;inset:0;margin:auto;border:2px dashed rgba(255,255,255,.4);border-radius:50%;width:84px;height:84px}
+  .spk-photo{aspect-ratio:1/1;overflow:hidden;background:var(--cream-2);border-bottom:3px solid var(--ruby)}
+  .spk-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;transition:transform .35s}
+  .spk:hover .spk-photo img{transform:scale(1.04)}
   .spk-body{padding:18px}
   .spk-name{font-family:'Fraunces';font-weight:700;font-size:1.1rem;color:var(--ruby-deep)}
-  .spk-role{font-size:.85rem;color:rgba(42,14,24,.65);font-weight:500;margin-top:2px;min-height:38px}
-  .spk-talk{margin-top:12px;font-size:.9rem;font-weight:600;color:var(--ink);border-top:1px solid rgba(164,19,60,.14);padding-top:12px;line-height:1.35}
+  .spk-role{font-size:.85rem;color:rgba(42,14,24,.7);font-weight:500;margin-top:2px}
+  .spk-co{font-size:.88rem;font-weight:800;color:var(--ink);margin-top:2px;min-height:38px}
+  .spk-talk{margin-top:12px;font-size:.9rem;font-weight:600;color:var(--ruby-bright);border-top:1px solid rgba(164,19,60,.14);padding-top:12px;line-height:1.35}
   .kb{position:absolute;top:12px;right:12px;background:var(--gold-soft);color:var(--ink);font-weight:800;font-size:.66rem;
     text-transform:uppercase;letter-spacing:1px;padding:4px 10px;border-radius:999px;z-index:2}
   /* ===== mini-game: Gem Catch ===== */
