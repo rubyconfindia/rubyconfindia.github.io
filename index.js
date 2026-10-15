@@ -26,19 +26,19 @@ document.getElementById('burger').addEventListener('click', () => navlinks.class
 
 /* ---------- speakers (real data) ---------- */
 const speakers = [
-  {n:'Cristian Planas', r:'Principal Engineer', c:'Combinaut', t:'Dead Cucumbers &amp; Frozen Capybaras: Building the Safety Net for Agentic Development'},
-  {n:'Dhruva Sagar (DS)', r:'Senior Consultant', c:'Tarka Labs', t:'The Ceiling: Why Ruby 4.0 Needed a Second Compiler'},
-  {n:'Shanmugha Priya P R', r:'Senior Software Engineer', c:'Rently Software Development Pvt Ltd', t:'Rethinking Ruby Query Optimization: From ORM Traps to AI Analysis'},
-  {n:'Vishwajeetsingh Desurkar', r:'Senior Software Engineer', c:'Josh Software Pvt Ltd', t:'No Way Home: Threads, Fibers and Ractors Against One Training Loop'},
-  {n:'Akshay Birajdar', r:'Senior Software Engineer', c:'Zendesk', t:'Small Things, Big Impact: Scaling Ruby Apps with the Right Primitives'},
-  {n:'Ratnadeep Deshmane', r:'CTO', c:'Betacraft', t:'The Pursuit of Quality: Chase Better Code with AI, and the Speed Follows'},
-  {n:'Sourabh Bharale', r:'Senior Software Engineer', c:'MoxiWorks Solutions Pvt Ltd', t:"Your API Is Already an Agent's Tool"}
+  {n:'Cristian Planas', img:'speakers/cristian-planas.png', r:'Principal Engineer', c:'Combinaut', t:'Dead Cucumbers &amp; Frozen Capybaras: Building the Safety Net for Agentic Development'},
+  {n:'Dhruva Sagar (DS)', img:'speakers/dhruva-sagar.jpg', r:'Senior Consultant', c:'Tarka Labs', t:'The Ceiling: Why Ruby 4.0 Needed a Second Compiler'},
+  {n:'Shanmugha Priya P R', img:'speakers/shanmugha-priya.jpg', r:'Senior Software Engineer', c:'Rently Software Development Pvt Ltd', t:'Rethinking Ruby Query Optimization: From ORM Traps to AI Analysis'},
+  {n:'Vishwajeetsingh Desurkar', img:'speakers/vishwajeetsingh-desurkar.jpg', r:'Senior Software Engineer', c:'Josh Software Pvt Ltd', t:'No Way Home: Threads, Fibers and Ractors Against One Training Loop'},
+  {n:'Akshay Birajdar', img:'speakers/akshay-birajdar.jpg', r:'Senior Software Engineer', c:'Zendesk', t:'Small Things, Big Impact: Scaling Ruby Apps with the Right Primitives'},
+  {n:'Ratnadeep Deshmane', img:'speakers/ratnadeep-deshmane.jpg', r:'CTO', c:'Betacraft', t:'The Pursuit of Quality: Chase Better Code with AI, and the Speed Follows'},
+  {n:'Sourabh Bharale', img:'speakers/sourabh-bharale.jpeg', r:'Senior Software Engineer', c:'MoxiWorks Solutions Pvt Ltd', t:"Your API Is Already an Agent's Tool"}
 ];
-const initials = name => name.split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();
+speakers.sort((a, b) => a.n.localeCompare(b.n));
 document.getElementById('spkGrid').innerHTML = speakers.map(s => `
   <article class="spk">
     ${s.kb ? '<span class="kb">Keynote</span>' : ''}
-    <div class="spk-avatar"><span class="ring"></span><span class="initials">${initials(s.n)}</span></div>
+    <div class="spk-photo"><img src="${s.img}" alt="${s.n}" loading="lazy"></div>
     <div class="spk-body">
       <div class="spk-name">${s.n}</div>
       <div class="spk-role">${s.r}</div>
