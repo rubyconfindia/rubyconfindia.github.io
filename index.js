@@ -2,20 +2,40 @@
 const navlinks = document.getElementById('navlinks');
 const views = document.querySelectorAll('.view');
 const validViews = new Set(['home','schedule','speakers','sponsors','cfp','venue']);
+// these sections share one scrolling page; links to them scroll instead of switching
+const scrollViews = ['home','speakers','schedule'];
+
+function markCurrent(id){
+  document.querySelectorAll('.navlinks a[data-view]').forEach(a =>
+    a.classList.toggle('current', a.dataset.view === id));
+}
 
 function showView(id, push){
   if(!validViews.has(id)) id = 'home';
+  const onScrollPage = scrollViews.includes(id);
+  const wasScrollPage = document.getElementById('view-home').classList.contains('active');
   views.forEach(v => {
-    const on = v.id === 'view-' + id;
+    const name = v.id.slice(5);
+    const on = onScrollPage ? scrollViews.includes(name) : name === id;
     v.classList.toggle('active', on);
     v.style.display = on ? 'block' : 'none';
   });
-  document.querySelectorAll('.navlinks a[data-view]').forEach(a =>
-    a.classList.toggle('current', a.dataset.view === id));
-  window.scrollTo(0, 0);
+  markCurrent(id);
+  if(id === 'home' || !onScrollPage) window.scrollTo(0, 0);
+  else document.getElementById('view-' + id).scrollIntoView({behavior: wasScrollPage ? 'smooth' : 'auto'});
   navlinks.classList.remove('open');
   if(push !== false && location.hash !== '#' + id) history.pushState(null, '', '#' + id);
 }
+
+/* ---------- highlight Home / Schedule / Speakers in the nav while scrolling ---------- */
+addEventListener('scroll', () => {
+  if(!document.getElementById('view-home').classList.contains('active')) return;
+  let cur = 'home';
+  for(const id of scrollViews){
+    if(document.getElementById('view-' + id).getBoundingClientRect().top <= 120) cur = id;
+  }
+  markCurrent(cur);
+}, {passive: true});
 document.querySelectorAll('[data-view]').forEach(el => {
   el.addEventListener('click', e => { e.preventDefault(); showView(el.dataset.view); });
 });
@@ -26,9 +46,9 @@ document.getElementById('burger').addEventListener('click', () => navlinks.class
 
 /* ---------- speakers (real data) ---------- */
 const speakers = [
-  {n:'Cristian Planas', img:'speakers/cristian-planas.png', r:'Principal Engineer', c:'Combinaut', t:'Dead Cucumbers &amp; Frozen Capybaras: Building the Safety Net for Agentic Development'},
+  {n:'Keshav Biswa', img:'speakers/keshav-biswa.png', r:'Staff Engineer', c:'Saeloun', t:'From 32 minutes to 10: Making a slow RSpec suite fast'},
   {n:'Dhruva Sagar (DS)', img:'speakers/dhruva-sagar.jpg', r:'Senior Consultant', c:'Tarka Labs', t:'The Ceiling: Why Ruby 4.0 Needed a Second Compiler'},
-  {n:'Shanmugha Priya P R', img:'speakers/shanmugha-priya.jpg', r:'Senior Software Engineer', c:'Rently Software Development Pvt Ltd', t:'Rethinking Ruby Query Optimization: From ORM Traps to AI Analysis'},
+  {n:'Shanmugha Priya P R', img:'speakers/shanmugha-priya.jpg', r:'Senior Software Engineer', c:'Rently Software Development Pvt Ltd', t:'Self-Upgrading Codebase: Automating Ruby Version Migrations Using Prism Parser &amp; AI'},
   {n:'Vishwajeetsingh Desurkar', img:'speakers/vishwajeetsingh-desurkar.jpg', r:'Senior Software Engineer', c:'Josh Software Pvt Ltd', t:'No Way Home: Threads, Fibers and Ractors Against One Training Loop'},
   {n:'Akshay Birajdar', img:'speakers/akshay-birajdar.jpg', r:'Senior Software Engineer', c:'Zendesk', t:'Small Things, Big Impact: Scaling Ruby Apps with the Right Primitives'},
   {n:'Ratnadeep Deshmane', img:'speakers/ratnadeep-deshmane.jpg', r:'CTO', c:'Betacraft', t:'The Pursuit of Quality: Chase Better Code with AI, and the Speed Follows'},
