@@ -28,7 +28,7 @@
   "name": "RubyConf India 2026",
   "description": "A full day of Ruby and Rails in Hyderabad — deep-dive talks, flash sessions, and a vibrant Ruby community conference at Novotel Hyderabad Airport.",
   "startDate": "2026-11-21T09:00:00+05:30",
-  "endDate": "2026-11-21T19:30:00+05:30",
+  "endDate": "2026-11-21T17:30:00+05:30",
   "eventStatus": "https://schema.org/EventScheduled",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "url": "https://rubyconf.in/",
@@ -55,7 +55,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Yatra+One&family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="index.css" />
+<link rel="stylesheet" href="index.css?v=20261110c" />
 </head>
 <body>
 
@@ -121,15 +121,16 @@
     </div>
     <nav class="navlinks" id="navlinks">
       <a data-view="home">Home</a>
-      <a data-view="schedule" hidden>Schedule</a>
       <a data-view="speakers">Speakers</a>
+      <a data-view="schedule">Schedule</a>
       <a data-view="sponsors">Sponsors</a>
       <a data-view="cfp" hidden>Submit a CFP</a>
-      <a href="prospect/RCI_Prospectus_2026.pdf" target="_blank" rel="noopener">Become a Sponsor</a>
+      <a href="prospect/RCI_Prospectus_2026.pdf" target="_blank" rel="noopener" hidden>Become a Sponsor</a>
       <a data-view="venue">Venue</a>
       <a href="https://www.flickr.com/photos/199139119@N05/" target="_blank" rel="noopener">Past Photos</a>
       <a class="nav-cta" href="https://tickets.tixly.in/e/rubyconf-india-2026" target="_blank" rel="noopener">Get Tickets</a>
     </nav>
+    <a class="mob-cta" href="https://tickets.tixly.in/e/rubyconf-india-2026" target="_blank" rel="noopener">Get Tickets</a>
     <button class="burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -148,12 +149,12 @@
       <div class="sub-deva">Connect · Code · Celebrate</div>
       <div class="pearls on-dark"><span class="pearl sm"></span><span class="pearl"></span><span class="pearl lg"></span><span class="pearl"></span><span class="pearl sm"></span></div>
 
-      <p class="lede">A full day of Ruby &amp; Rails in the heart of the Deccan — deep-dive talks, flash sessions, and a community like no other.</p>
+      <p class="lede">A full day of Ruby &amp; Rails in the City of Pearls - talks as rich as Hyderabadi biryani, flash sessions with Charminar charm, and a community like no other.</p>
 
       <div class="meta-row">
         <div class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><b>Where</b><span>Novotel Hyderabad Airport</span></div></div>
         <div class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><div><b>When</b><span>21 November 2026</span></div></div>
-        <div class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Hours</b><span>9:00 AM – 7:30 PM</span></div></div>
+        <div class="meta-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Hours</b><span>9:00 AM – 5:30 PM</span></div></div>
       </div>
 
       <div class="countstrip" aria-label="Countdown">
@@ -170,13 +171,77 @@
         <a class="btn btn-gold" href="https://tickets.tixly.in/e/rubyconf-india-2026" target="_blank" rel="noopener">Book Your Ticket
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <a class="btn btn-ghost" data-view="cfp" hidden>Submit a CFP</a>
-        <a class="btn btn-ghost" href="prospect/RCI_Prospectus_2026.pdf" target="_blank" rel="noopener">Become a Sponsor</a>
+        <a class="btn btn-ghost" href="prospect/RCI_Prospectus_2026.pdf" target="_blank" rel="noopener" hidden>Become a Sponsor</a>
       </div>
+      <p class="urgency">Seats are limited — book early to secure your spot.</p>
 
       <div class="tiles">
-        <div class="tile" data-view="schedule" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span>Schedule</span></div>
         <div class="tile" data-view="speakers"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span>Speakers</span></div>
+        <div class="tile" data-view="schedule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span>Schedule</span></div>
         <div class="tile" data-view="venue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Venue</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SPEAKERS ====== -->
+<section class="view" id="view-speakers">
+  <div class="speakers-wrap section-pad">
+    <div class="wrap">
+      <div class="vhead">
+        <svg class="archmark" viewBox="0 0 72 38"><use href="#arch"/></svg>
+        <span class="kicker">The Voices</span>
+        <h2>Meet your 2026 speakers</h2>
+        <div class="pearls"><span class="pearl sm"></span><span class="pearl"></span><span class="pearl lg"></span><span class="pearl"></span><span class="pearl sm"></span></div>
+        <p>Talks on Ruby 4.0 internals, concurrency, faster test suites, scaling, AI-powered upgrades, code quality, and agent-ready APIs - from engineers across the community.</p>
+      </div>
+      <div class="spk-grid" id="spkGrid"></div>
+
+      <div class="sec-cta">
+        <p>Seen the lineup? Come hear them live in Hyderabad.</p>
+        <a class="btn btn-primary" href="https://tickets.tixly.in/e/rubyconf-india-2026" target="_blank" rel="noopener">Book Your Ticket <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SCHEDULE ====== -->
+<section class="view" id="view-schedule">
+  <div class="schedule-wrap section-pad">
+    <div class="jaali-bg"></div>
+    <div class="wrap" style="position:relative">
+      <div class="vhead">
+        <svg class="archmark" viewBox="0 0 72 38"><use href="#arch"/></svg>
+        <span class="kicker">The Programme</span>
+        <h2>One day, one track, zero FOMO</h2>
+        <div class="pearls"><span class="pearl sm"></span><span class="pearl"></span><span class="pearl lg"></span><span class="pearl"></span><span class="pearl sm"></span></div>
+        <p>All talks happen one after another in a single hall, so you never miss a session.</p>
+      </div>
+
+      <div class="day-label">Saturday · 21 November 2026 · 9:00 AM – 5:30 PM · Single track</div>
+
+      <div class="day-panel active">
+        <div class="slot brk"><div class="time">9:00 – 9:45 AM</div><div><div class="talk">Registration</div></div></div>
+        <div class="slot"><div class="time">9:45 – 10:30 AM</div><div><div class="talk">Kick-off</div></div></div>
+        <div class="slot"><div class="time">10:30 – 11:00 AM</div><div><div class="talk">The Ceiling: Why Ruby 4.0 Needed a Second Compiler</div><div class="who">Dhruva Sagar</div></div></div>
+        <div class="slot"><div class="time">11:00 – 11:30 AM</div><div><div class="talk">Your API Is Already an Agent's Tool</div><div class="who">Sourabh Bharale</div></div></div>
+        <div class="slot brk"><div class="time">11:30 – 11:40 AM</div><div><div class="talk">Tea Break</div></div></div>
+        <div class="slot"><div class="time">11:40 AM – 12:10 PM</div><div><div class="talk">No Way Home: Threads, Fibers and Ractors Against One Training Loop</div><div class="who">Vishwajeetsingh Desurkar</div></div></div>
+        <div class="slot"><div class="time">12:10 – 12:40 PM</div><div><div class="talk">From 32 minutes to 10: Making a slow RSpec suite fast</div><div class="who">Keshav Biswa</div></div></div>
+        <div class="slot brk"><div class="time">12:40 – 1:40 PM</div><div><div class="talk">Lunch</div></div></div>
+        <div class="slot brk"><div class="time">1:40 – 2:10 PM</div><div><div class="talk">Sponsor Showcase</div></div></div>
+        <div class="slot"><div class="time">2:10 – 2:40 PM</div><div><div class="talk">Panel Discussion</div></div></div>
+        <div class="slot"><div class="time">2:40 – 3:10 PM</div><div><div class="talk">Small Things, Big Impact: Scaling Ruby Apps with the Right Primitives</div><div class="who">Akshay Birajdar</div></div></div>
+        <div class="slot"><div class="time">3:10 – 3:40 PM</div><div><div class="talk">Self-Upgrading Codebase: Automating Ruby Version Migrations Using Prism Parser &amp; AI</div><div class="who">Shanmugha Priya P R</div></div></div>
+        <div class="slot brk"><div class="time">3:40 – 3:50 PM</div><div><div class="talk">Tea Break</div></div></div>
+        <div class="slot"><div class="time">3:50 – 4:20 PM</div><div><div class="talk">The Pursuit of Quality: Chase Better Code with AI, and the Speed Follows</div><div class="who">Ratnadeep Deshmane</div></div></div>
+        <div class="slot"><div class="time">4:20 – 5:00 PM</div><div><div class="talk">Flash Talks<span class="tag flash">Lightning</span></div><div class="who">Open to attendees</div></div></div>
+        <div class="slot brk"><div class="time">5:00 – 5:30 PM</div><div><div class="talk">Closing Remarks, Giveaways, Thank-yous &amp; Networking</div></div></div>
+      </div>
+
+      <div class="sec-cta">
+        <p>Like what's on the programme? Grab your seat for the day.</p>
+        <a class="btn btn-primary" href="https://tickets.tixly.in/e/rubyconf-india-2026" target="_blank" rel="noopener">Book Your Ticket <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
   </div>
@@ -208,66 +273,6 @@
   </div>
 </section>
 
-<!-- ====== SCHEDULE ====== -->
-<section class="view" id="view-schedule">
-  <div class="schedule-wrap section-pad">
-    <div class="jaali-bg"></div>
-    <div class="wrap" style="position:relative">
-      <div class="vhead">
-        <svg class="archmark" viewBox="0 0 72 38"><use href="#arch"/></svg>
-        <span class="kicker">The Programme</span>
-        <h2>One day, one track, zero FOMO</h2>
-        <div class="pearls"><span class="pearl sm"></span><span class="pearl"></span><span class="pearl lg"></span><span class="pearl"></span><span class="pearl sm"></span></div>
-        <p>One packed single-track day — no clashing sessions, so everyone experiences every talk together, from kickoff to dinner.</p>
-      </div>
-
-      <div class="day-label">Saturday · 21 November 2026 · 9:00 AM – 7:30 PM · Single track</div>
-
-      <div class="day-panel active">
-        <div class="slot brk"><div class="time">8:15 – 9:30 AM</div><div><div class="talk">Registration &amp; Breakfast</div></div></div>
-        <div class="slot"><div class="time">9:30 – 9:45 AM</div><div><div class="talk">Kickoff</div><div class="who">Gautam Rege</div></div></div>
-        <div class="slot"><div class="time">9:45 – 10:30 AM</div><div><div class="talk">Keynote: 13 Years Inside JRuby &amp; the JVM<span class="tag keynote">Keynote</span></div><div class="who">Charles Nutter</div></div></div>
-        <div class="slot"><div class="time">10:30 – 10:55 AM</div><div><div class="talk">15 Years of Rails with DDD — Battle-Tested Patterns</div><div class="who">Andrzej Krzywda</div></div></div>
-        <div class="slot"><div class="time">10:55 – 11:20 AM</div><div><div class="talk">From Characters to Meaning: Ruby's Lexer &amp; Parser</div><div class="who">Puneet Khushwani</div></div></div>
-        <div class="slot brk"><div class="time">11:20 – 11:40 AM</div><div><div class="talk">Tea Break</div></div></div>
-        <div class="slot"><div class="time">11:40 – 12:05 PM</div><div><div class="talk">Inside Rails Boot: Puma's Role in Initialization</div><div class="who">Udbhav Gambhir</div></div></div>
-        <div class="slot"><div class="time">12:05 – 12:30 PM</div><div><div class="talk">Reading Rails: A Visual Walkthrough of the Source Code</div><div class="who">Ratnadeep Deshmane</div></div></div>
-        <div class="slot brk"><div class="time">12:30 – 1:45 PM</div><div><div class="talk">Lunch</div></div></div>
-        <div class="slot brk"><div class="time">1:45 – 2:00 PM</div><div><div class="talk">Sponsor Showcase</div></div></div>
-        <div class="slot"><div class="time">2:00 – 2:25 PM</div><div><div class="talk">What If… Ruby Led the AI Revolution?</div><div class="who">Vishwajeetsingh Desurkar</div></div></div>
-        <div class="slot"><div class="time">2:25 – 2:50 PM</div><div><div class="talk">Ruby, Meet the Metaverse</div><div class="who">Nandini Singhal</div></div></div>
-        <div class="slot"><div class="time">2:50 – 3:15 PM</div><div><div class="talk">The Solid Shift: Redis → Rails 8 Solid Stack</div><div class="who">Prateek Choudhary</div></div></div>
-        <div class="slot brk"><div class="time">3:15 – 3:35 PM</div><div><div class="talk">Tea Break</div></div></div>
-        <div class="slot"><div class="time">3:35 – 4:00 PM</div><div><div class="talk">JRuby: A Love Affair of Java &amp; Ruby</div><div class="who">Rakesh Jha</div></div></div>
-        <div class="slot"><div class="time">4:00 – 4:25 PM</div><div><div class="talk">Teaching AI to Debug Your Rails Apps (MCP + Observability)</div><div class="who">Prathamesh Sonpatki</div></div></div>
-        <div class="slot"><div class="time">4:25 – 4:50 PM</div><div><div class="talk">Is the Monolith a Problem?</div><div class="who">Chikahiro Tokoro</div></div></div>
-        <div class="slot"><div class="time">4:50 – 5:15 PM</div><div><div class="talk">AI at Runtime: Self-Healing Ruby Apps</div><div class="who">Deepan Kumar</div></div></div>
-        <div class="slot"><div class="time">5:15 – 5:40 PM</div><div><div class="talk">Ruby DSLs: Write Code That Looks Like English</div><div class="who">Sameer Kumar</div></div></div>
-        <div class="slot"><div class="time">5:40 – 6:05 PM</div><div><div class="talk">MCP Security: Real-World Risks &amp; Defenses</div><div class="who">Vlad Dyachenko</div></div></div>
-        <div class="slot"><div class="time">6:05 – 6:45 PM</div><div><div class="talk">Flash Talks<span class="tag flash">Lightning</span></div></div></div>
-        <div class="slot"><div class="time">6:45 – 7:00 PM</div><div><div class="talk">Vote of Thanks</div></div></div>
-        <div class="slot brk"><div class="time">7:00 PM →</div><div><div class="talk">Networking &amp; Dinner</div></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ====== SPEAKERS ====== -->
-<section class="view" id="view-speakers">
-  <div class="speakers-wrap section-pad">
-    <div class="wrap">
-      <div class="vhead">
-        <svg class="archmark" viewBox="0 0 72 38"><use href="#arch"/></svg>
-        <span class="kicker">The Voices</span>
-        <h2>Meet your 2026 speakers</h2>
-        <div class="pearls"><span class="pearl sm"></span><span class="pearl"></span><span class="pearl lg"></span><span class="pearl"></span><span class="pearl sm"></span></div>
-        <p>Talks on agentic development, Ruby 4.0, query optimization, concurrency, quality, and APIs — from engineers across the community.</p>
-      </div>
-      <div class="spk-grid" id="spkGrid"></div>
-    </div>
-  </div>
-</section>
-
 <!-- ====== SPONSORS ====== -->
 <section class="view" id="view-sponsors">
   <div class="sponsors-wrap section-pad">
@@ -284,11 +289,12 @@
       <div class="tier" hidden><h4>Gold</h4><div class="logos"><a class="logo-card" href="https://in.pattern.com/" target="_blank" rel="noopener">Pattern</a><a class="logo-card" href="https://www.coupa.com/" target="_blank" rel="noopener">Coupa</a></div></div>
       <div class="tier"><h4>Silver</h4><div class="logos">
         <a class="logo-card silver has-logo" href="https://railsfactory.com/" target="_blank" rel="noopener"><img src="sponsor/railsfactory.png" alt="RailsFactory"></a>
+        <a class="logo-card silver has-logo" href="https://www.saeloun.com/" target="_blank" rel="noopener"><img src="sponsor/saeloun.svg" alt="Saeloun"></a>
+        <a class="logo-card silver has-logo" href="https://typesense.org/" target="_blank" rel="noopener"><img src="sponsor/typesense.svg" alt="Typesense"></a>
       </div></div>
-      <div class="tier" hidden><h4>Flash Talk</h4><div class="logos"><a class="logo-card" href="https://typesense.org/" target="_blank" rel="noopener">Typesense</a></div></div>
       <div class="tier" hidden><h4>Community</h4><div class="logos"><a class="logo-card" href="https://www.lanes-planes.com" target="_blank" rel="noopener">Lanes &amp; Planes</a></div></div>
 
-      <div class="sponsor-cta">
+      <div class="sponsor-cta" hidden>
         <h3>Be a part of RubyConf India 2026</h3>
         <p>Put your brand in front of an enthusiastic, decision-making developer audience.</p>
         <div class="perks"><span>✔ Maximize visibility</span><span>✔ Direct engagement</span><span>✔ Build connections</span></div>
@@ -402,11 +408,11 @@
       <div class="foot-col">
         <h5>Explore</h5>
         <a data-view="home">Home</a>
-        <a data-view="schedule" hidden>Schedule</a>
         <a data-view="speakers">Speakers</a>
+        <a data-view="schedule">Schedule</a>
         <a data-view="sponsors">Sponsors</a>
         <a data-view="cfp" hidden>Submit a CFP</a>
-        <a href="prospect/RCI_Prospectus_2026.pdf" target="_blank" rel="noopener">Become a Sponsor</a>
+        <a href="prospect/RCI_Prospectus_2026.pdf" target="_blank" rel="noopener" hidden>Become a Sponsor</a>
         <a data-view="venue">Venue &amp; Travel</a>
         <a href="https://www.flickr.com/photos/199139119@N05/" target="_blank" rel="noopener">Past Photos</a>
       </div>
@@ -414,7 +420,7 @@
         <h5>Get Involved</h5>
         <a href="https://tickets.tixly.in/e/rubyconf-india-2026" target="_blank" rel="noopener">Buy Tickets</a>
         <a href="https://cfp.rubyconf.in/" target="_blank" rel="noopener" hidden>Submit a CFP</a>
-        <a href="prospect/RCI_Prospectus_2026.pdf" target="_blank" rel="noopener">Sponsor Us</a>
+        <a href="prospect/RCI_Prospectus_2026.pdf" target="_blank" rel="noopener" hidden>Sponsor Us</a>
         <a href="https://twitter.com/rubyconfindia" target="_blank" rel="noopener">Twitter / X</a>
         <a href="https://www.linkedin.com/company/rubyconfindia2026" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://www.facebook.com/rubyconfindia" target="_blank" rel="noopener">Facebook</a>
@@ -427,6 +433,6 @@
   </div>
 </footer>
 
-<script src="index.js"></script>
+<script src="index.js?v=20261110b"></script>
 </body>
 </html>
